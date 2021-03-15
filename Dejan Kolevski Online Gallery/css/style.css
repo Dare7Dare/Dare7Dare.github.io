@@ -1,0 +1,564 @@
+@import url(./fonts.css);
+
+@import url(./partials/_variables.css);
+
+@import url(./partials/_global.css);
+
+.navbar-custom-color {
+    background-color: transparent;
+} 
+
+.navbar-nav {
+    padding-right: 7em;
+}
+
+.slideshowText {
+    font-size: 35px;
+}
+
+.center {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.centerSlideShow {
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 50px;
+}
+
+footer.footer-area {
+    padding: 15rem 0 0 0;
+    background: url(../images/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5 {
+    font: normal 500 23px/ 30px var(--roboto);
+    color: white;
+}
+
+footer.footer-area .social a > i {
+    font-size: 22px;
+    padding: 2rem;
+    color: #ff80d5;
+}
+
+footer.footer-area .social a:hover > i {
+    color: var(--primary-color);
+}
+
+.contact  {
+    padding: 1rem 50px 0 50px;
+}
+
+.contact .social {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px 50px 33px 50px;
+  position: relative;
+  height: 630px;
+}
+
+.contact .social h5 {
+    font: normal 500 23px/ 30px var(--roboto);
+    color: black;
+}
+
+.contact .social a > i {
+    font-size: 40px;
+}
+
+.contact .social a > i:hover {
+    font-size: 50px;
+    color: #050505;
+}
+
+.fa-instagram {
+    color: #fb3958;
+}
+
+.fa-linkedin {
+    color: #0e76a8;
+}
+
+.fa-facebook {
+    color: #4267B2;
+}
+
+.contact .social h3 {
+    padding-top: 70px;
+    color: black;
+}
+
+
+#fixedButton {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #fixedButton::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #fixedButton.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Styles for the content section */
+  
+  .content {
+    width: 77%;
+    margin: 50px auto;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    color: #6c767a;
+    line-height: 1.9;
+  }
+  @media (min-width: 500px) {
+    .content {
+      width: 43%;
+    }
+    #fixedButton {
+      margin: 30px;
+    }
+  }
+  .content h1 {
+    margin-bottom: -10px;
+    color: #03a9f4;
+    line-height: 1.5;
+  }
+  .content h3 {
+    font-style: italic;
+    color: #96a2a7;
+  }
+
+  .fixedButton{
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    padding: 20px;
+}
+.roundedFixedBtn{
+  height: 60px;
+  line-height: 80px;  
+  width: 60px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+#arrowUp {
+    line-height: 60px;
+}
+
+.img {
+    position: relative;
+}
+
+.img .projectButton1 {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    border: none;
+    background: black;
+    color: red;
+    padding: 7px 40px 10px 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:inline-block;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.img .projectButton1:hover {
+    background: white;
+    color: red;
+}
+.img .projectButton2 {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    border: none;
+    background: white;
+    color: blue;
+    padding: 7px 40px 10px 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:inline-block;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.img .projectButton2:hover {
+    background: blue;
+    color: white;
+}
+.img .projectButton3 {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    border: none;
+    background: white;
+    color: grey;
+    padding: 7px 40px 10px 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:inline-block;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.img .projectButton3:hover {
+    background: grey;
+    color: white;
+}
+
+
+
+header {
+    width: 100%;
+    height: 10vh;
+}
+
+.content {
+    width: 94%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    line-height: 40px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-style: italic;
+    padding-left: 120px;
+}
+
+.logo1 {
+    line-height: 40px;
+    position: fixed;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-style: italic;
+    
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 40px;
+}
+
+nav ul {
+    line-height: 40px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    font-style: italic;
+}
+
+nav.black ul {
+    width: 100%;
+    line-height: 40px;
+    height: 70px;
+    padding-right: 40px;
+    background: #000;
+}
+
+nav.black ul li {
+    display: inline-block;
+    padding: 16px 40px;
+}
+
+nav.black ul li:last-child {
+    padding-right: 230px;
+    padding-left: 50px;
+}
+
+nav.black ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;
+}
+
+nav ul li:last-child {
+    padding-right: 230px;
+    padding-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.effect::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.effect:hover {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-animation: pulse1 1s infinite;
+    -moz-animation: pulse1 1s infinite;
+    -ms-animation: pulse1 1s infinite;
+    -o-animation: pulse1 1s infinite;
+    animation: pulse1 1s infinite;
+}
+
+.effect:hover::after {
+    width: 100%;
+    transition: width .3s;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    -webkit-animation: pulse1 1s infinite;
+    -moz-animation: pulse1 1s infinite;
+    -ms-animation: pulse1 1s infinite;
+    -o-animation: pulse1 1s infinite;
+    animation: pulse1 1s infinite;
+}
+
+.logo::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.logo:hover {
+    color: white;
+    text-decoration: none;-webkit-animation: pulse 1s infinite;
+    -moz-animation: pulse 1s infinite;
+    -ms-animation: pulse 1s infinite;
+    -o-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+}
+
+.logo:hover::after {
+    width: 100%;
+    transition: width .3s;
+    text-decoration: none;
+    color: white;
+    -webkit-animation: pulse 1s infinite;
+    -moz-animation: pulse 1s infinite;
+    -ms-animation: pulse 1s infinite;
+    -o-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+}
+
+.logo1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+.logo1:hover {
+    color: white;
+    text-decoration: none;-webkit-animation: pulse 1s infinite;
+    -moz-animation: pulse 1s infinite;
+    -ms-animation: pulse 1s infinite;
+    -o-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+}
+
+.logo1:hover::after {
+    width: 100%;
+    transition: width .3s;
+    text-decoration: none;
+    color: white;
+    -webkit-animation: pulse 1s infinite;
+    -moz-animation: pulse 1s infinite;
+    -ms-animation: pulse 1s infinite;
+    -o-animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
+}
+
+
+
+@media(max-width: 786px) {
+
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+    }
+
+    nav ul {
+          max-height: 0px;
+          background: #000;
+    }
+
+    nav.black ul {
+          background: #000;
+    }
+
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px;
+          text-align: center;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+
+}
+   
+   @-webkit-keyframes pulse {
+    from { font-size: 20px; }
+    to { font-size: 22px; }
+   }
+   @-moz-keyframes pulse {
+    from { font-size: 20px; }
+    to { font-size: 22px; }
+   }
+   @-ms-keyframes pulse {
+    from { font-size: 20px; }
+    to { font-size: 22px; }
+   }
+   @-o-keyframes pulse {
+    from { font-size: 20px; }
+    to { font-size: 22px; }
+   }
+   @keyframes pulse {
+    from { font-size: 20px; }
+    to { font-size: 22px; }
+   }
+
+   @-webkit-keyframes pulse1 {
+    from { font-size: 16px; }
+    to { font-size: 18px; }
+   }
+   @-moz-keyframes pulse1 {
+    from { font-size: 16px; }
+    to { font-size: 18px; }
+   }
+   @-ms-keyframes pulse1 {
+    from { font-size: 16px; }
+    to { font-size: 18px; }
+   }
+   @-o-keyframes pulse1 {
+    from { font-size: 16px; }
+    to { font-size: 18px; }
+   }
+   @keyframes pulse1 {
+    from { font-size: 16px; }
+    to { font-size: 18px; }
+   }
+
+
+.site-main .gallery {
+    padding: 7rem 0rem;
+}
+
+.site-main > .gallery .photo {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    width: 22rem;
+    height: 28rem;
+    margin: 0rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main > .gallery .photo:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.site-main .gallery .button-group button {
+    background: transparent;
+    border: none;
+    color: white;
+    font: normal 500 16px/60px var(--roboto);
+    text-transform: uppercase;
+}
+
+.site-main .gallery .button-group button + button {
+    padding-left: 3rem;
+}
+
+.contact .success {
+    background-color: rgba(89, 255, 83, 1);
+    animation: status 5s ease forwards;
+}
+
+.contact .error {
+    background-color: rgb(255, 27, 27, 1);
+    animation: status 5s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

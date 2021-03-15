@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darko Kolevski Portfolio</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./vendor/Magnific-Popup-master/dist/magnific-popup.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
+
+    <style>
+        .active {
+            color: black !important;
+        }
+        header {
+          z-index: 1000;
+        }
+        input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { 
+  font-family: Poppins-Medium;  
+  color: #555555;
+}
+input:-moz-placeholder { 
+  font-family: Poppins-Medium;  
+  color: #555555;
+}
+input::-moz-placeholder { 
+  font-family: Poppins-Medium;  
+  color: #555555;
+}
+input:-ms-input-placeholder { 
+  font-family: Poppins-Medium;  
+  color: #555555;
+}
+
+textarea::-webkit-input-placeholder { 
+  font-family: Poppins-Medium;  
+  color: #555555;
+}
+textarea:-moz-placeholder { 
+  font-family: Poppins-Medium;  
+  color: #555555;
+}
+textarea::-moz-placeholder { 
+  font-family: Poppins-Medium;  
+  color: #555555;
+}
+textarea:-ms-input-placeholder { 
+  font-family: Poppins-Medium;  
+  color: #555555;
+}
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+
+/*---------------------------------------------*/
+.container {
+	max-width: 1200px;
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+
+.container-contact100 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.wrap-contact100 {
+  width: 1170px;
+  height: 630px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 50px 33px 50px;
+  position: relative;
+  margin-top: -93px;
+}
+
+
+.show-wrap-contact100 {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/*==================================================================
+[ Form ]*/
+
+.contact100-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 68px;
+}
+
+.contact100-form-title {
+  display: block;
+  width: 100%;
+  font-family: Poppins-Bold;
+  font-size: 39px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 44px;
+  font: normal 500 23px/ 30px var(--roboto);
+  text-transform: uppercase;
+}
+
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #d9d9d9;
+  padding-bottom: 0px;
+  margin-bottom: 65px;
+}
+
+.rs1-wrap-input100 {
+  width: calc((100% - 30px) / 2);
+}
+
+.label-input100 {
+  font-family: Poppins-Regular;
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.5;
+  padding-left: 5px;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: Poppins-SemiBold;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+  padding: 0 5px;
+}
+
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  background: #ff4b5a;
+}
+
+
+/*---------------------------------------------*/
+input.input100 {
+  height: 40px;
+}
+
+
+textarea.input100 {
+  min-height: 110px;
+  padding-top: 9px;
+  padding-bottom: 13px;
+}
+
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100 + .focus-input100::before {
+  width: 100%;
+}
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-contact100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -25px;
+}
+
+.contact100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 50px;
+  background-color: #ff4b5a;
+  border-radius: 25px;
+
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+  box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+  -moz-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+  -o-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(255, 75, 90, 0.5);
+}
+
+.contact100-form-btn i {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn:hover {
+  background-color: #333333;
+  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -moz-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -o-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+}
+
+.contact100-form-btn:hover i {
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}
+
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+
+@media (max-width: 992px) {
+  .wrap-contact100 {
+    padding: 82px 80px 33px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rs1-wrap-input100 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-contact100 {
+    padding: 82px 15px 33px 15px;
+  }
+}
+
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 10px;
+  top: 58%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 2px;
+  pointer-events: none;
+
+  font-family: Poppins-Medium;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f06a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 16px;
+  top: 58%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 8px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+/*==================================================================
+[ Contact more ]*/
+
+.contact100-more {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.5;
+}
+
+.contact100-more-highlight {
+  color: #ff4b5a;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <a class="fixedButton" id="fixedButton" href>
+        <div class="roundedFixedBtn"><div id="arrowUp"><i class="fa fa-arrow-up"></i></div></div>
+     </a>
+
+   <!-- <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-md p-3 mb-2 navbar-custom-color">   
+             
+                <a class="navbar-brand" href="./index.html">
+                    <h2 id="title">Dejan Kolevski Photography</h2>
+                </a>
+              
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+              </nav>
+        </div>
+    </header> -->
+
+    <header>
+      <nav class="navbar-static-top">
+         <div class="logo">
+            <a href="./index.html" style="text-decoration: none; color: white;">Dejan Kolevski Photography
+            </a>
+        </div>
+         <div class="menu">
+            <ul>
+               <li><div class="logo1">
+                <a href="./index.html" style="text-decoration: none; color: white;">Home
+                </a>
+            </div></li>
+               <li><div class="logo1">
+                <a href="./about.html" style="text-decoration: none; color: white;">About
+                </a>
+            </div></li>
+               <li><div class="logo1">
+                <a href="./gallery.html" style="text-decoration: none; color: white;">Gallery
+                </a>
+            </div></li>
+               <li><div class="logo1">
+                <a href="./contact.html" style="text-decoration: none; color: white;">Contact
+                </a>
+            </div></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+
+    <main class="site-main">
+
+        <section class="contact">
+            
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="container-contact100">            
+                <div class="wrap-contact100">
+                  <form class="contact100-form validate-form" action="https://formspree.io/f/xqkgrpgl" method="POST" id="my-form">
+                    <span class="contact100-form-title">
+                      Contact Me Via Email
+                    </span>
+            
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                      <span class="label-input100">Your Name</span>
+                      <input class="input100" type="text" name="name" id="name" placeholder="Enter your name">
+                      <span class="focus-input100"></span>
+                    </div>
+            
+                    <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                      <span class="label-input100">Email</span>
+                      <input class="input100" type="text" name="email" id="email" placeholder="Enter your email addess">
+                      <span class="focus-input100"></span>
+                    </div>
+            
+                    <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                      <span class="label-input100">Message</span>
+                      <textarea class="input100" name="message" id="message" placeholder="Your message here..."></textarea>
+                      <span class="focus-input100"></span>
+                    </div>
+            
+                    <div class="container-contact100-form-btn">
+                      <button class="contact100-form-btn" type="submit">
+                        <span>
+                          Submit
+                          <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="social text-center">
+                  <h5 class="text-uppercase">Reach out through my social networks</h5>
+                  <h3>FACEBOOK</h3>
+                  <a href="https://www.facebook.com/dejan.kolevski.5" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <h3>INSTAGRAM</h3>
+                  <a href="https://www.instagram.com/kolevski.dejan/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <h3>LINKEDIN</h3>
+                  <a href="https://www.linkedin.com/in/dejan-kolevski-00a70945/?originalSubdomain=mk" target="_blank"><i class="fab fa-linkedin"></i></a>  
+                </div>
+              </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <script src="./js/jquery.3.5.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./vendor/isotope/isotope.min.js"></script>
+    <script src="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+      
+(function ($) {
+    "use strict";
+
+    /*==================================================================
+    [ Focus Contact2 ]*/
+    $('.input100').each(function(){
+        $(this).on('blur', function(){
+            if($(this).val().trim() != "") {
+                $(this).addClass('has-val');
+            }
+            else {
+                $(this).removeClass('has-val');
+            }
+        })    
+    })
+
+    /*==================================================================
+    [ Validate ]*/
+    var input = $('.validate-input .input100');
+
+    $('.validate-form').on('submit',function(){
+        var check = true;
+
+        for(var i=0; i<input.length; i++) {
+            if(validate(input[i]) == false){
+                showValidate(input[i]);
+                check=false;
+            }
+        }
+
+        return check;
+    });
+
+
+    $('.validate-form .input100').each(function(){
+        $(this).focus(function(){
+           hideValidate(this);
+        });
+    });
+
+    function validate (input) {
+        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
+            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+                return false;
+            }
+        }
+        else {
+            if($(input).val().trim() == ''){
+                return false;
+            }
+        }
+    }
+
+    function showValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).addClass('alert-validate');
+    }
+
+    function hideValidate(input) {
+        var thisAlert = $(input).parent();
+
+        $(thisAlert).removeClass('alert-validate');
+    }
+    
+})(jQuery);
+    </script>
+
+    
+</body>
+</html>

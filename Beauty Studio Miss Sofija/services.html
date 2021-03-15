@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Sofija</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./vendor/Magnific-Popup-master/dist/magnific-popup.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <style>
+        .active {
+            color: black !important;
+        }
+    </style>
+</head>
+<body>
+    
+    <a class="fixedButton" id="fixedButton" href>
+        <div class="roundedFixedBtn"><div id="arrowUp"><i class="fa fa-arrow-up"></i></div></div>
+     </a>
+
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-md p-3 mb-2 navbar-custom-color">   
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/logo.png" alt="logo" width="100" height="50">
+                </a>
+                <a class="navbar-brand" href="./index.html" style="margin-left: -120px; margin-top:7px">
+                    <h2 id="title">Cosmetic Studio Miss Sofija</h2>
+                </a>
+              
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto text-center w-100 justify-content-end ml-lg-0 d-lg-flex align-items-center">
+                    <div class="nav-item h-100"><a class="nav-link" href="./index.html">Home</a></div>
+                    <div class="nav-item h-100"><a class="nav-link" href="./map.html">Map</a></div>
+                    <div class="nav-item h-100"><a class="nav-link active" href="./services.html">Services</a></div>
+                    <div class="nav-item h-100"><a class="nav-link" href="./contact.html">Contact</a></div>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+
+        <section class="services">
+
+            <div class="row text-center">
+                <div class="col">
+                    <h3 style="font: normal bold 25px/ 60px var(--roboto); color: #ff80d5; padding-bottom: 30px;">Here you can view all the services we offer, as well as our reasonable prices</h3>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row pb-5">
+                    <div class="col-md-2" style="border-right: 2px black solid;">
+                        <div class="button-group btn-group-vertical">
+                            <button type="button" class="active" id="btn1">All</button>
+                            <button type="button" data-filter=".massages">Massages & Well-Being</button>
+                            <button type="button" data-filter=".hairRemoval">Hair Removal</button>
+                            <button type="button" data-filter=".hand&foot">Hand and Foot Care</button>
+                            <button type="button" data-filter=".nails">Nail Enchancements</button>
+                            <button type="button" data-filter=".facials">Facials</button>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row text-center grid">
+                            <div class="col-md-3 priceItem massages">
+                                <div class="priceItemInner">
+                                    <img src="./images/backneckshoulders.jpg" alt="massage">
+                                    <h4>Back, Neck & Shoulders</h4>
+                                    <h6>30mins - 30$</h6>
+                                    <button type="button" class="btn btn-sm"> Make a booking</button>                                
+                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem massages">
+                                <div class="priceItemInner">
+                                    <img src="./images/fullbodymassage.jpg" alt="waxing">
+                                    <h4>Full Body</h4>
+                                    <h6>1 hour - 45$</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Make a booking</button>                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem massages">
+                                <div class="priceItemInner">
+                                    <img src="./images/headneckshouldersmassage.jpg" alt="massage">
+                                    <h4>Head, Neck & Shoulders</h4>
+                                    <h6>15 mins - 20$</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Make a booking</button>                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem massages">
+                                <div class="priceItemInner">
+                                    <img src="./images/waxing.jpg" alt="waxing">
+                                    <h4>Total Body Wellness</h4>
+                                    <h6>1 hour - 45$</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Make a booking</button>                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem massages">
+                                <div class="priceItemInner">
+                                    <img src="./images/hotstonemassage.jpg" alt="massage">
+                                    <h4>Hot Stone Massage</h4>
+                                    <h6>45 mins - 40$</h6>
+                                    <button type="button" class="btn btn-sm"> Make a booking</button>                                
+                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem massages">
+                                <div class="priceItemInner">
+                                    <img src="./images/indianheadmassage.jpg" alt="waxing">
+                                    <h4>Indian Head Massage</h4>
+                                    <h6>30mins - 30$</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Make a booking</button>                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem hairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/lipwaxing.jpg" alt="massage">
+                                    <h4>Lip or Chin Waxing</h4>
+                                    <h6>11$</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Make a booking</button>                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem hairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/halflegwaxing.jpg" alt="waxing">
+                                    <h4>Half Leg</h4>
+                                    <h6>18$</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Make a booking</button>                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem hairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/massage.jpg" alt="massage">
+                                    <h4>Half Leg, Bikini and Armpit</h4>
+                                    <h6>30$</h6>
+                                    <button type="button" class="btn btn-sm"> Make a booking</button>                                
+                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem hairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/waxing.jpg" alt="waxing">
+                                    <h4>Half Leg, Bikini and Armpit</h4>
+                                    <h6>33$</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Make a booking</button>                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem hairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/massage.jpg" alt="massage">
+                                    <h4>Brazilian</h4>
+                                    <h6>18$</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Make a booking</button>                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem hairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/waxing.jpg" alt="waxing">
+                                    <h4>Full leg & Brazilian</h4>
+                                    <h6>40$</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Make a booking</button>                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem hairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/massage.jpg" alt="massage">
+                                    <h4>Chest or Back</h4>
+                                    <h6>23$</h6>
+                                    <button type="button" class="btn btn-sm"> Make a booking</button>                                
+                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem hairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/waxing.jpg" alt="waxing">
+                                    <h4>Chest & Back</h4>
+                                    <h6>33$</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Make a booking</button>                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem hairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/massage.jpg" alt="massage">
+                                    <h4>Bikini</h4>
+                                    <h6>12$</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Make a booking</button>                                </div>
+                            </div>
+                            <div class="col-md-3 priceItem hairRemoval">
+                                <div class="priceItemInner">
+                                    <img src="./images/waxing.jpg" alt="waxing">
+                                    <h4>Full leg</h4>
+                                    <h6>27$</h6>
+                                    <button type="button" class="btn btn-outline-primary btn-sm btn-block"> Make a booking</button>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row justify-content-center text-center">
+                <div class="col-lg-3 col-md-6 col-sm12 serviceCard">
+                    <h6>Waxing</h6>
+                    <h5>20$</h5>
+                    <img src="./images/waxing.jpg" alt="waxing" width="160" height="80">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm12 serviceCard">
+                    <h6>Waxing</h6>
+                    <h5>20$</h5>
+                    <img src="./images/waxing.jpg" alt="waxing" width="160" height="80">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm12 serviceCard">
+                    <h6>Waxing</h6>
+                    <h5>20$</h5>
+                    <img src="./images/waxing.jpg" alt="waxing" width="160" height="80">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm12 serviceCard">
+                    <h6>Waxing</h6>
+                    <h5>20$</h5>
+                    <img src="./images/waxing.jpg" alt="waxing" width="160" height="80">
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-3 col-md-6 col-sm12 serviceCard">
+                    <h6>Waxing</h6>
+                    <h5>20$</h5>
+                    <img src="./images/waxing.jpg" alt="waxing" width="160" height="80">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm12 serviceCard">
+                    <h6>Waxing</h6>
+                    <h5>20$</h5>
+                    <img src="./images/waxing.jpg" alt="waxing" width="160" height="80">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm12 serviceCard">
+                    <h6>Waxing</h6>
+                    <h5>20$</h5>
+                    <img src="./images/waxing.jpg" alt="waxing" width="160" height="80">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm12 serviceCard">
+                    <h6>Waxing</h6>
+                    <h5>20$</h5>
+                    <img src="./images/waxing.jpg" alt="waxing" width="160" height="80">
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-3 col-md-6 col-sm12 serviceCard">
+                    <h6>Waxing</h6>
+                    <h5>20$</h5>
+                    <img src="./images/waxing.jpg" alt="waxing" width="160" height="80">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm12 serviceCard">
+                    <h6>Waxing</h6>
+                    <h5>20$</h5>
+                    <img src="./images/waxing.jpg" alt="waxing" width="160" height="80">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm12 serviceCard">
+                    <h6>Waxing</h6>
+                    <h5>20$</h5>
+                    <img src="./images/waxing.jpg" alt="waxing" width="160" height="80">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm12 serviceCard">
+                    <h6>Waxing</h6>
+                    <h5>20$</h5>
+                    <img src="./images/waxing.jpg" alt="waxing" width="160" height="80">
+                </div>
+            </div> -->
+
+        </section>
+
+    </main>
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-6">
+                    <div class="">
+                        <div class="social text-center">
+                        </br>
+                            <h5 class="text-uppercase">Follow us on social media</h5>
+                            <a href="https://www.facebook.com/%D0%9A%D0%BE%D0%B7%D0%BC%D0%B5%D1%82%D0%B8%D1%87%D0%BA%D0%BE-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%BE-%D0%9C%D0%98%D0%A1%D0%A1-1063009210420726/"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/miss.studio/?igshid=g1v4ih45haf0"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 justify-content-center">
+                </br>
+                    <div class="row workingHours">
+                        <h4>Working Hours :</h4>
+                    </div>
+                    <div class="row text-start" style="margin-left: 135px;">
+                    <h6><span style="color: #ff80d5;">Monday - Friday :</span> 09:00 - 20:00</h6>
+                    <h6><span style="color: #ff80d5;">Saturdays :</span> 10:00 - 18:00</h6>
+                    <h6><span style="color: #ff80d5;">Sundays & Holidays :</span> Closed</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/jquery.3.5.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./vendor/isotope/isotope.min.js"></script>
+    <script src="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
