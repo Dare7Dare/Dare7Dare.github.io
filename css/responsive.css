@@ -8,6 +8,10 @@
     .header_area .main-menu .navbar .navbar-brand {
         padding: 0;
     }
+
+    .site-main .site-banner .site-title h3 {
+        padding-top: 20%;
+    }
 }
 
 @media only screen and (max-width:1125px) {
@@ -18,6 +22,36 @@
     .navbar-nav {
         padding-right: 0;
     }
+}
+
+@media only screen and (max-width:992px) {
+
+    .site-main .site-banner .site-title h3 {
+        padding-top: 20%;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+    
+    .site-main .site-banner .site-title h1 {
+        font-size: 1.5rem;    
+    }
+    
+    .site-main .site-banner .site-title h4 {
+        font-size: 1.2rem;
+    }
+
+    .title-text {
+        font: normal bold 30px/ 30px var(--roboto);
+    }
+
+    .button {
+        padding: .3rem 1.2rem;
+        font: normal 500 12px/17px var(--roboto);
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 4px;
+    }
+ /* tuka nekade sum zastanat */
 }
 
 @media only screen and (max-width:910px) {
@@ -34,7 +68,7 @@
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:890px) {
     .header_area .main-menu .nav-item .nav-link {
         display: none;
     }
@@ -54,6 +88,55 @@
         display: flex;
         float: right;
         cursor: pointer;
+    }
+
+    .title-text {
+        font: normal bold 30px/ 30px var(--roboto);
+    }
+
+    .site-main .site-banner .container {
+        padding: 0 !important;
+    }
+
+    .site-main .site-banner .site-title h3 {
+        padding-top: 10%;
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
+    
+    .site-main .site-banner .site-title h1 {
+        font-size: 1.5rem;    
+    }
+    
+    .site-main .site-banner .site-title h4 {
+        font-size: 1.2rem;
+    }
+    
+    .site-main .site-banner .banner-image > img {
+        padding: 50px 0 0 0;
+        width: 10rem;
+    }
+
+    .button {
+        padding: .3rem 1.2rem;
+        font: normal 500 12px/17px var(--roboto);
+        position: relative;
+        border: 3px solid transparent;
+        border-radius: 4px;
+    }
+
+    .site-main .about-area {
+        margin: 0 auto;
+    }
+
+    .site-main .about-area .about-image {
+        display: none;
+    }
+
+    .site-main .about-area .about-title h2 > span {
+        display: block;
+        font: normal bold 25px/ 35px var(--roboto);
+        letter-spacing: 10px;
     }
 }
 
@@ -97,7 +180,7 @@
     }
 }
 
-@media only screen and (max-width:335px) {
+@media only screen and (max-width:420px) {
     .header_area .main-menu .navbar .navbar-brand {
         padding: 0;
         padding-left: 20px;
@@ -111,6 +194,27 @@
         float: right;
         cursor: pointer;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:345px) {
+    .header_area .main-menu .navbar .navbar-brand {
+        padding: 0;
+        padding-left: 20px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .mobile-bar {
+        display: flex;
+        float: right;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+
+    .mainTitle {
+        font-size: 18px;
     }
 }
 

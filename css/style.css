@@ -4,12 +4,13 @@
 
 @import url(./partials/_global.css);
 
-/* .navbar-custom-color {
-    background-color: red;
-} */
 
 .header_area .main-menu .navbar .navbar-brand {
     padding: 0 2em 0 5em;
+}
+
+.mainTitle {
+    color: black;
 }
 
 .header_area .main_menu .navbar {
@@ -51,7 +52,7 @@
 }
 
 .mobile-bar span{
-    border: 1px blue solid;
+    border: 1px black solid;
     display: block;
     height: 2px;
     width: 20px;
@@ -106,6 +107,10 @@
 
 .site-main .about-area .about-title .paragraph > p {
     padding: .4rem 0;
+}
+
+.about-image1 {
+    display: none;
 }
 
 .site-main .skills-area {
