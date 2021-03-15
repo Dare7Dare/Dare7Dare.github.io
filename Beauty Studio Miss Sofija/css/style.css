@@ -1,0 +1,473 @@
+@import url(./fonts.css);
+
+@import url(./partials/_variables.css);
+
+@import url(./partials/_global.css);
+
+.navbar-custom-color {
+    background-color: #ff80d5;
+} 
+
+.header_area {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header_area .main-menu .navbar .navbar-brand {
+    padding: 0 2em 0 5em;
+}
+
+#title {
+    color: white;
+    font: normal 500 30px var(--merriweather);
+}
+
+#title:hover {
+    color: black;
+}
+
+.header_area .main_menu .navbar {
+    padding: 1em 20em;
+}
+
+.navbar-nav {
+    padding-right: 7em;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    font: normal 500 15px/2px var(--merriweather);
+    text-transform: uppercase;
+    padding: 1.7em;
+    color: white;
+}
+
+.header_area .main-menu .navbar-nav a {
+    color: white;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+    color: black;
+}
+
+.slideshowText {
+    font-size: 35px;
+}
+
+.center {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.centerSlideShow {
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 50px;
+}
+
+footer.footer-area {
+    padding: 0rem 10rem 1rem 10rem;
+    background-color: rgb(255, 188, 249, 0.2);
+}
+
+footer.footer-area .social h5 {
+    font: normal 600 23px/ 30px var(--merriweather);
+}
+
+.workingHours {
+    font: normal 600 23px/ 30px var(--merriweather);
+}
+
+footer.footer-area .social a > i {
+    font-size: 22px;
+    padding: 2rem;
+    color: #ff80d5;
+}
+
+footer.footer-area .social a:hover > i {
+    color: var(--primary-color);
+}
+
+#fixedButton {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #fixedButton::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #fixedButton.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Styles for the content section */
+  
+  .content {
+    width: 77%;
+    margin: 50px auto;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    color: #6c767a;
+    line-height: 1.9;
+  }
+  @media (min-width: 500px) {
+    .content {
+      width: 43%;
+    }
+    #fixedButton {
+      margin: 30px;
+    }
+  }
+  .content h1 {
+    margin-bottom: -10px;
+    color: #03a9f4;
+    line-height: 1.5;
+  }
+  .content h3 {
+    font-style: italic;
+    color: #96a2a7;
+  }
+
+  .fixedButton{
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    padding: 20px;
+}
+.roundedFixedBtn{
+  height: 60px;
+  line-height: 80px;  
+  width: 60px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #ff80d5;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+#arrowUp {
+    line-height: 60px;
+}
+
+.img {
+    position: relative;
+}
+
+.img .projectButton1 {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    border: none;
+    background: black;
+    color: red;
+    padding: 7px 40px 10px 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:inline-block;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.img .projectButton1:hover {
+    background: white;
+    color: red;
+}
+.img .projectButton2 {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    border: none;
+    background: white;
+    color: blue;
+    padding: 7px 40px 10px 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:inline-block;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.img .projectButton2:hover {
+    background: blue;
+    color: white;
+}
+.img .projectButton3 {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    border: none;
+    background: white;
+    color: grey;
+    padding: 7px 40px 10px 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:inline-block;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.img .projectButton3:hover {
+    background: grey;
+    color: white;
+}
+
+.site-main .work-experience {
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+
+.site-main .about-area {
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span {
+    display: block;
+    font: normal bold 49px/ 60px var(--merriweather);
+    letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph > p {
+    padding: .4rem 0;
+}
+
+.site-main .about-area .about-title p {
+    padding: 1rem 7rem;
+}
+
+.site-main .about-area .client {
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+
+.site-main .about-area .client .client-img {
+    padding: 2rem;
+}
+
+.site-main .about-area .client .about-client {
+    padding-top: 2rem;
+}
+
+.site-main .about-area .client .about-client h4 {
+    font: normal 500 21px/ 20px var(--merriweather);
+}
+
+.site-main .about-area .client .about-client p {
+    font-size: 14px;
+}
+
+.site-main .about-area .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span {
+    background: #ff80d5;
+    width: 12px;
+    height: 12px;
+}
+
+.site-main .services {
+    padding: 20px 100px;
+}
+
+.site-main .services .button-group button {
+    background: transparent;
+    border: none;
+    color: #ff80d5;
+    font: normal 500 16px/30px var(--merriweather);
+}
+
+.priceItem {
+    /* border: 2px black solid; */
+    height: 300px;
+}
+
+.priceItemInner {
+    /* border: 2px red solid; */
+    height: 280px;
+    border-bottom: 1px black solid;
+    /* background-image: linear-gradient(to bottom right, rgb(107, 0, 107, 0.5) 0%, rgb(175, 0, 175, 0.5) 50%, rgb(255, 74, 255, 0.5) 100%); */
+}
+
+/* .priceItemInner:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+} */
+
+.priceItemInner > img {
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.priceItemInner h4 {
+    padding-top: 10px;
+    font-size: 17px;
+    /* border-bottom: 1px #ff80d5 solid; */
+}
+
+/*
+.priceItemInner h4 {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    /*display: block; /* This will put the pseudo element on its own line. */
+    /*margin: 0 auto; /* This will center the border. */
+    /*width: 50%; /* Change this to whatever width you want. */
+    /*padding-top: 20px; /* This creates some space between the element and the border. */
+    /*border-bottom: 1px solid #ff80d5; /* This creates the border. Replace black with whatever color you want. */
+/*}
+*/
+
+.priceItemInner h6 {
+    color: grey;
+    font-size: 12px;
+    padding-top: 0px;
+}
+
+.priceItemInner h3 {
+    padding-top: 50px;
+}
+
+.priceItemInner button {
+    margin-top: 50px;
+    color: black;
+    border-color: #ff80d5;
+}
+
+.priceItemInner button:hover {
+    margin-top: 50px;
+    color: #ff80d5;
+    border-color: black;
+    background-color: black;
+    transition: 0.8s ease;
+}
+
+.serviceCard {
+    background: rgba(248, 252, 253, 0,973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 1rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.serviceCard:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.testimonial-area {
+    padding: 50px 0;
+    position: relative;
+}
+
+.testimonial-area::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.single-testimonial {
+    color: black;
+    padding-left: 75px;
+    position: relative;
+    margin: 0 15px;
+}
+
+.img-area {
+    border-radius: 50%;
+    height: 150px;
+    left: 0;
+    margin-top: -75px;
+    position: absolute;
+    top: 50%;
+    width: 150px;
+}
+
+.testi-text {
+    background-color: #ff80d5;
+    padding: 20px 20px 10px 100px;
+    border-radius: 20px;
+}
+
+.img-area > img {
+    border-radius: 50%;
+}
+
+.testi-text h4 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.testi-text p {
+    line-height: 25px;
+    font-size: 15px;
+}
+
+.single-testimonial:hover .testi-text {
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
+
+.testimonial-area div.owl-nav {
+    color: black;
+    display: inline-block;
+    font-size: 55px;
+    height: 60px;
+    margin-top: -30px;
+    text-align: center;
+    width: 40px;
+    transition: 0.3s;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+
+}
+
+.owl-prev {
+    left: -20px;
+    top: 70px;
+}
+
+.owl-next {
+    right: -20px;
+    top: 70px;
+}
+
+.contact100-form-btn {
+    background-color: #ff80d5 !important;
+    border-radius: 10px !important;
+}
+
+.contact100-form-btn:hover {
+    background-color: black !important;
+    color: #ff80d5;
+}
