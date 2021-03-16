@@ -39,11 +39,20 @@
                   </ul>
                 </div>
 
-                <div class="mobile-bar">
+                <div class="mobile-bar" onclick="showHamburgerMenuLinks()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
+
+                <div id="hamburgerLinks">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link"href="#about-area">About</a>
+                    <a class="nav-link"href="#skills-area">Skills</a>
+                    <a class="nav-link"href="#workExperience">Experience</a>
+                    <a class="nav-link" href="#project-area">Projects</a>
+                    <a class="nav-link" href="#footer">Contact</a>
+                  </div>
               </nav>
         </div>
     </header>
@@ -53,21 +62,24 @@
         <section class="site-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-8 site-title">
+                    <div class="site-title col colHome">
                         <h3 class="title-text" id="greeting"></h3>
                         <h1 class="title-text text-uppercase">My name is</h1>
                         <h1 class="title-text text-uppercase">Darko Kolevski</h1>
                         <h4 class="title-text text-uppercase">Junior Front End Developer</h4>
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button mr-4 text-uppercase">Hire me!</button>
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase button1">Hire me!</button>
                                 <a href="./Darko Kolevski.pdf" download="Darko Kolevski CV">
-                                <button type="button" class="btn button secondary-button text-uppercase">Download CV</button>
+                                <button type="button" class="btn button secondary-button text-uppercase button2">Download CV</button>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-4 banner-image">
+                    <div class="banner-image col-lg-5 colHome1">
+                        <img src="./images/CV1.png" alt="banner-img" class="img-fluid">
+                    </div>
+                    <div class="banner-image1 col-lg-5 colHome1" style="display: none;">
                         <img src="./images/CV1.png" alt="banner-img" class="img-fluid">
                     </div>
                 </div>
@@ -88,7 +100,7 @@
                             <span>introduce</span>
                             <span>myself</span>
                         </h2>
-                        <div class="paragraph py-4 w-75">
+                        <div class="paragraph py-4">
                             <p class="para">
                                 My name is Darko, I am 25 years old and live in Skopje, Macedonia. I am an enthusiastic person, aspiring to become a full-stack developer. I am very motivated and eager to learn new things with the intent of improving in every field, especially in the field of programming and computer science.
                             </p>
@@ -99,7 +111,9 @@
                                 If you wanna know more about me, feel free to download my CV, by clicking the button bellow.
                             </p>
                         </div>
+                        <a href="./Darko Kolevski.pdf" download="Darko Kolevski CV"></a>
                         <button type="button" class="btn button primary-button text-uppercase" style="margin-top: -20px;">Download CV</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -107,16 +121,16 @@
 
         <section class="skills-area" id="skills-area">
             <div class="container">
-                <div class="row">
+                <div class="row text-center">
                     <div class="col-lg-12 text-center skills-title">
                         <h1 class="text-uppercase title-text titles">Skills</h1>
-                        <p class="para">
-                            Here is a list of the technical skills I possess and use on a daily basis.
-                        </p>
-                        <p class="para1">
-                            Digital skills - Self-assessment grid
-                        </p>
                     </div>
+                    <p class="para">
+                        Here is a list of the technical skills I possess and use on a daily basis.
+                    </p>
+                    <p class="para1">
+                        Digital skills - Self-assessment grid
+                    </p>
                 </div>
                 <div class="container skills-list">
                     <div class="row">
@@ -331,7 +345,7 @@
                     <div class="row work-experience" style="margin-top: 50px;">
                         <div class="row pb-4 pt-2">
                             <div class="col">
-                                <h3 style="float: left;">Flutter Developer at NextHop</h3>
+                                <h3 style="float: left;">Front-End Flutter Developer at NextHop</h3>
                                 <img src="./images/nexthop.png" alt="NextHop" height="40" style="padding-left: 50px;">
                                 <h3 style="float: right;">January 2021 - Current</h3>
                             </div>

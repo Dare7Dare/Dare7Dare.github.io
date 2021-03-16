@@ -81,14 +81,21 @@ window.onload = function() {
 function getDateTime() {
     var now     = new Date(); 
     var hour    = now.getHours(); 
-   if(hour >= 12){  
-      document.getElementById('greeting').innerHTML = "Good Afternoon";
+   if (hour < 5){  
+      document.getElementById('greeting').innerHTML = "Good Night";
    }
-   else if (hour >= 12 && hour < 19){
+   else if (hour < 12){
          document.getElementById('greeting').innerHTML = "Good Morning";
     }
-    else {
+    else if (hour < 19){
+        document.getElementById('greeting').innerHTML = "Good Afternoon";
+    }
+    else if (hour < 11){
         document.getElementById('greeting').innerHTML = "Good Evening";
     }
+    else{
+        document.getElementById('greeting').innerHTML = "Good Night";
+    }
 }
+
 });

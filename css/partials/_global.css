@@ -46,12 +46,14 @@
 
 p.para {
     color: var(--text-color);
-    font: normal 500 16px/ 25px var(--roboto);
+    font: normal 500 16px/ 20px var(--roboto);
+    padding-top: 20px;
 }
 
 p.para1 {
     color: black;
     font: normal 900 12px/ 15px var(--roboto);
+    margin-top: -10px;
 }
 
 button:focus, button:active
