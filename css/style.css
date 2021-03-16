@@ -69,6 +69,7 @@
 
 
 .site-main .site-banner {
+
 }
 
 .site-main .site-banner .site-title h3 {
@@ -100,11 +101,11 @@
 
 .site-main .site-banner .banner-image > img {
     padding: 50px 0 0 0;
-    width: 35rem;
+    width: 29rem;
 }
 
 .site-main .about-area {
-    padding: 3rem 5rem 0 5rem;
+    padding: 7rem 5rem 0 5rem;
 }
 
 .site-main .about-area .about-title h2 > span {
@@ -170,6 +171,10 @@
 
 .site-main .about-area .about-title p {
     padding: 1rem 7rem;
+}
+
+.about-image {
+    padding-top: 20px;
 }
 
 .site-main .about-area .client {
