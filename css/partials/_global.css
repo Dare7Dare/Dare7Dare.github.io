@@ -49,6 +49,11 @@ p.para {
     font: normal 500 16px/ 25px var(--roboto);
 }
 
+p.para1 {
+    color: black;
+    font: normal 900 12px/ 15px var(--roboto);
+}
+
 button:focus, button:active
 button:hover
 .btn:active,
