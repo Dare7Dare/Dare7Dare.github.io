@@ -2306,7 +2306,7 @@
     .img .projectButton1 {
         position: absolute;
         bottom: 20px;
-        right: 30px;
+        right: 50px;
         border: none;
         background: black;
         color: red;
@@ -2322,7 +2322,7 @@
         .img .projectButton2 {
             position: absolute;
             bottom: 20px;
-            right: 30px;
+            right: 50px;
             border: none;
             background: white;
             color: blue;
@@ -2338,7 +2338,7 @@
             .img .projectButton3 {
                 position: absolute;
                 bottom: 20px;
-                right: 30px;
+                right: 50px;
                 border: none;
                 background: white;
                 color: grey;
@@ -2354,7 +2354,7 @@
                 .img .projectButton4 {
                     position: absolute;
                     bottom: 20px;
-                    right: 30px;
+                    right: 50px;
                     border: none;
                     background: white;
                     color: black;
@@ -2370,7 +2370,7 @@
                     .img .projectButton5 {
                         position: absolute;
                         bottom: 20px;
-                        right: 30px;
+                        right: 50px;
                         border: none;
                         background: #ff80d5;
                         color: white;
