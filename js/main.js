@@ -90,7 +90,7 @@ function getDateTime() {
     else if (hour < 19){
         document.getElementById('greeting').innerHTML = "Good Afternoon";
     }
-    else if (hour < 11){
+    else if (hour < 23){
         document.getElementById('greeting').innerHTML = "Good Evening";
     }
     else{

@@ -60,6 +60,29 @@
 
 @media only screen and (max-width:993px) {
 
+    .breakLine1 {
+        display: block;
+    }
+
+    .workExperienceImage {
+        padding-left: 10px !important;
+    }
+
+    .work-experience {
+        position: relative;
+    }
+
+    .workExperienceTitle {
+        font-size: 18px;
+    }
+
+    .workExperienceTitle2 {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 18px;
+    }
+
     .site-main .site-banner .site-title h3 {
         padding-top: 20%;
         font-weight: 500;
@@ -208,6 +231,31 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .workExperienceImage {
+        padding-left: 10px !important;
+    }
+
+    .work-experience {
+        position: relative;
+    }
+
+    .workExperienceTitle {
+        font-size: 15px;
+    }
+
+    .workExperienceTitle2 {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        font-size: 15px;
+    }
+
+    .workExperienceDescription {
+        font-size: 17px;
+    }
+}
+
 @media only screen and (max-width:630px) {
     .site-main .site-banner {
         padding: 0 67px 0 67px;
@@ -231,6 +279,10 @@
         padding: 50px 0 0 0;
         max-width: 100%;
     }
+}
+
+@media only screen and (max-width: 575px) {
+    
 }
 
 @media only screen and (max-width:560px) {
@@ -258,6 +310,10 @@
 
     .colHome1 {
         width: 30%;
+    }
+
+    footer.footer-area {
+        padding-bottom: 10px;
     }
 }
 
@@ -292,6 +348,71 @@
     
 }
 
+
+@media only screen and (max-width:575px) {
+    .skills {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #fixedButton {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        transition: background-color .3s, 
+          opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+      }
+      #fixedButton::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+      }
+      #fixedButton.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .fixedButton{
+        position: fixed;
+        bottom: 0px;
+        right: 0px; 
+        padding: 20px;
+    }
+    .roundedFixedBtn{
+      height: 40px;
+      line-height: 60px;  
+      width: 40px;  
+      font-size: 1.5em;
+      font-weight: bold;
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    #arrowUp {
+        line-height: 37px;
+    }
+
+    .workExperienceDescription {
+        font-size: 15px;
+    }
+}
+
 @media only screen and (max-width:490px) {
     .header_area .main-menu .navbar .navbar-brand {
         margin-top: 10px;
@@ -301,6 +422,145 @@
 
     .header_area .main-menu .navbar .navbar-brand {
         padding: 0;
+    }
+}
+
+@media only screen and (max-width:464px) {
+    .site-main .project-area .button-group button + button {
+        padding-left: 1rem;
+    }
+}
+
+@media only screen and (max-width:393px) {
+    .projectImage {
+        width: 250px;
+        height: 250px;
+    }
+
+    .img .projectButton1 {
+    position: absolute;
+    bottom: 20px;
+    right: 120px;
+    border: none;
+    background: black;
+    color: red;
+    font-size: 14px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:inline-block;
+    justify-content: center;
+    text-decoration: none;
+    }
+
+    .img .projectButton2 {
+        position: absolute;
+        bottom: 20px;
+        right: 120px;
+        border: none;
+        background: white;
+        color: blue;
+        font-size: 14px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display:inline-block;
+        justify-content: center;
+        text-decoration: none;
+        }
+
+        .img .projectButton3 {
+            position: absolute;
+            bottom: 20px;
+            right: 120px;
+            border: none;
+            background: white;
+            color: grey;
+            font-size: 14px;
+            padding: 5px 20px 5px 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            display:inline-block;
+            justify-content: center;
+            text-decoration: none;
+            }
+
+            .img .projectButton4 {
+                position: absolute;
+                bottom: 20px;
+                right: 120px;
+                border: none;
+                background: white;
+                color: black;
+                font-size: 14px;
+                padding: 5px 20px 5px 20px;
+                border-radius: 10px;
+                margin: 0 auto;
+                display:inline-block;
+                justify-content: center;
+                text-decoration: none;
+                }
+
+                .site-main .project-area .button-group {
+                    margin-top: -30px;
+                    align-items: center;
+                }
+
+                .titleBigDevice {
+                    display: none;
+                }
+
+                .titleSmallDevice {
+                    display:inline-block;
+                    font: normal 700 18px/12px var(--roboto);
+                }
+
+                .titleSmallDevice > .text-secondary {
+                    color: #6c757d!important;
+                    font-family: var(--bs-font-sans-serif)!important;
+                    font-size: 1rem!important;
+                    font-weight: 400!important;
+                    line-height: 0!important;
+                }
+
+                .site-main .project-area .grid .our-project > .title h4 {
+                    font: normal 700 18px/12px var(--roboto);
+                }
+}
+
+@media only screen and (max-width:369px) {
+    .site-main .project-area .button-group button {
+        font-size: 13px;
+        padding-left: .5rem;
+    }
+}
+
+@media only screen and (max-width:320px) {
+
+    .site-main .project-area .button-group button {
+        font-size: 11px;
+        padding-left: .1rem !important;
+    }
+
+    .titleSmallDevice {
+        display:inline-block;
+        font: normal 700 14px/12px var(--roboto);
+    }
+
+    .titleSmallDevice > .text-secondary {
+        color: #6c757d!important;
+        font-family: var(--bs-font-sans-serif)!important;
+        font-size: 1rem!important;
+        font-weight: 400!important;
+        line-height: 0!important;
+    }
+
+    .site-main .project-area .grid .our-project > .title h4 {
+        font: normal 700 14px/12px var(--roboto);
+    }
+
+    .titles {
+        font: normal bold 24px/ 29px var(--roboto) !important;
     }
 }
 
@@ -351,6 +611,40 @@
 
 @media only screen and (max-width:400px) {
     
+    footer.footer-area .social a > i {
+        font-size: 22px;
+        padding: 1rem;
+        color: var(--border-color);
+    }
+
+    .colHome {
+        display: none;
+    }
+
+    .colHomeSmallDevice {
+        display:inline-block;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    
+
+    .site-main .site-banner .banner-image > img {
+        padding: 0 0 0 0;
+        width: 5rem;
+        margin-left: auto;
+  margin-right: auto;
+  display: block;
+    }
+
+    .button2 {
+        padding: .3rem .5rem;
+    }
+
+    .colHome1 {
+        width: 100% !important;
+    }
 
     .site-main .about-area {
         padding: 1rem 1rem;
@@ -371,6 +665,213 @@
     .site-main .about-area .about-title .paragraph > p {
         padding: .4rem 0;
     }
+
+    #fixedButton {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        transition: background-color .3s, 
+          opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+      }
+      #fixedButton::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+      }
+      #fixedButton.show {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .fixedButton{
+        position: fixed;
+        bottom: 0px;
+        right: 0px; 
+        padding: 20px;
+    }
+    .roundedFixedBtn{
+      height: 30px;
+      line-height: 60px;  
+      width: 30px;  
+      font-size: 1.2em;
+      font-weight: bold;
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    #arrowUp {
+        line-height: 30px;
+    }
+
+    .site-main .skills-area {
+        padding-top: 40px;
+    }
+
+    .titles {
+        font: normal bold 28px/ 33px var(--roboto);
+    }
+
+    .workExperienceImage {
+        padding-left: 10px !important;
+    }
+
+    .work-experience {
+        position: relative;
+    }
+
+    .workExperienceTitle {
+        font-size: 15px;
+    }
+
+    .workExperienceTitle2 {
+        position: absolute;
+        top: 30px;
+        left: 23px;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .workExperienceImage {
+        padding-left: 10px !important;
+    }
+
+    .work-experience {
+        position: relative;
+    }
+
+    .workExperienceTitle {
+        font-size: 16px;
+    }
+
+    .workExperienceTitle2 {
+        position: absolute;
+        top: 30px;
+        left: 23px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .workExperienceImage {
+        padding-left: 10px !important;
+    }
+
+    .work-experience {
+        position: relative;
+    }
+
+    .workExperienceTitle {
+        font-size: 16px;
+    }
+
+    .workExperienceTitle2 {
+        position: absolute;
+        top: 30px;
+        left: 23px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .workExperienceImage {
+        padding-left: 10px !important;
+        position: absolute;
+        top: 80px;
+    }
+
+    .work-experience {
+        position: relative;
+    }
+
+    .workExperienceTitle {
+        font-size: 16px;
+    }
+
+    .workExperienceTitle2 {
+        position: absolute;
+        top: 50px;
+        left: 23px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .workExperienceImage {
+        padding-left: 10px !important;
+    }
+
+    .work-experience {
+        position: relative;
+    }
+
+    .workExperienceTitle {
+        font-size: 16px;
+    }
+
+    .workExperienceTitle2 {
+        position: absolute;
+        top: 50px;
+        left: 23px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .workExperienceImage {
+        padding-left: 10px !important;
+    }
+
+    .work-experience {
+        position: relative;
+    }
+
+    .workExperienceTitle {
+        font-size: 16px;
+    }
+
+    .workExperienceTitle2 {
+        position: absolute;
+        top: 50px;
+        left: 23px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 284px) {
+    /* .workExperienceImage {
+        padding-left: 10px !important;
+    }
+
+    .work-experience {
+        position: relative;
+    }
+
+    .workExperienceTitle {
+        font-size: 10px;
+    }
+
+    .workExperienceTitle2 {
+        position: absolute;
+        top: 30px;
+        left: 23px;
+        font-size: 8px;
+    } */
 }
 
 @media only screen and (max-width:420px) {
@@ -387,6 +888,13 @@
         float: right;
         cursor: pointer;
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:385px) {
+    .skills-area {
+        padding: 0 !important;
+        padding-top: 30px !important;
     }
 }
 
@@ -415,13 +923,104 @@
     }
 }
 
+@media only screen and (max-width:345px) {
+    .site-main > .skills-area .skills {
+        background: rgba(248, 252, 253, 0,973);
+        padding: 0;
+        width: 12rem;
+        margin: 2rem 0rem;
+        transition: box-shadow .7s ease;
+    }
+
+    .site-main > .skills-area .skills-list {
+        padding: 0;
+    }
+}
+
 @media only screen and (max-width:300px) {
-    .site-main .site-banner .banner-image > img {
-        display: none;
+    .projectImage {
+        width: 200px;
+        height: 200px;
     }
 
-    .colHome {
-        width: 300px;
+    .img .projectButton1 {
+    position: absolute;
+    bottom: 20px;
+    right: 80px;
+    border: none;
+    background: black;
+    color: red;
+    font-size: 12px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:inline-block;
+    justify-content: center;
+    text-decoration: none;
+    }
+
+    .img .projectButton2 {
+        position: absolute;
+        bottom: 20px;
+        right: 80px;
+        border: none;
+        background: white;
+        color: blue;
+        font-size: 12px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display:inline-block;
+        justify-content: center;
+        text-decoration: none;
+        }
+
+        .img .projectButton3 {
+            position: absolute;
+            bottom: 20px;
+            right: 80px;
+            border: none;
+            background: white;
+            color: grey;
+            font-size: 12px;
+            padding: 5px 20px 5px 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            display:inline-block;
+            justify-content: center;
+            text-decoration: none;
+            }
+
+            .img .projectButton4 {
+                position: absolute;
+                bottom: 20px;
+                right: 80px;
+                border: none;
+                background: white;
+                color: black;
+                font-size: 12px;
+                padding: 5px 20px 5px 20px;
+                border-radius: 10px;
+                margin: 0 auto;
+                display:inline-block;
+                justify-content: center;
+                text-decoration: none;
+                }
+}
+
+@media only screen and (max-width:305px) {
+    .site-main .site-banner .site-title h1 {
+        font: normal bold 15px/ 15px var(--roboto);
+    }
+}
+
+@media only screen and (max-width:288px) {
+    .site-main .site-banner .site-title h1 {
+        font: normal bold 13px/ 13px var(--roboto);
+    }
+
+    .site-main .site-banner .site-title h4 {
+        font: normal bold 11px/ 11px var(--roboto);
     }
 }
 
@@ -435,40 +1034,3 @@
 
 
 
-
-/* 
-
-
-@media only screen and (max-width:480px) {
-    .header_area .main-menu .nav-item .nav-link {
-        display: none;
-    }
-
-    .header_area {
-        width: 100%;
-    }
-
-    .header_area .main-menu .navbar .navbar-brand {
-        float: left;
-        padding: 0;
-        padding-left: 20px;
-        width: 70%;
-        color: red;
-    }
-    
-    .mobile-bar {
-        display: flex;
-        float: right;
-        cursor: pointer;
-    }
-}
-
-@media only screen and (max-width:440px) {
-    .header_area .main-menu .navbar .navbar-brand {
-        float: left;
-        padding: 0;
-        padding-left: 20px;
-        width: 50%;
-        color: green;
-    }
-} */

@@ -5,7 +5,17 @@
 @import url(./partials/_global.css);
 
 
+.breakLine1 {
+    display: none;
+}
 
+.colHomeSmallDevice {
+    display: none;
+}
+
+.titleSmallDevice {
+    display: none;
+}
 
 .header_area .main-menu .navbar .navbar-brand {
     padding: 5px 2em 0 5em;
@@ -369,6 +379,26 @@ footer.footer-area .social a:hover > i {
 
 .img .projectButton3:hover {
     background: grey;
+    color: white;
+}
+
+.img .projectButton4 {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    border: none;
+    background: white;
+    color: black;
+    padding: 7px 40px 10px 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:inline-block;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.img .projectButton4:hover {
+    background: black;
     color: white;
 }
 
