@@ -244,7 +244,6 @@
 }
 
 .about-client {
-    min-height: 270px;
 }
 
 .site-main .about-area .owl-carousel .owl-dots .owl-dot.active span {
@@ -434,6 +433,26 @@ footer.footer-area .social a:hover > i {
     color: white;
 }
 
+.img .projectButton5 {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    border: none;
+    background: #ff80d5;
+    color: white;
+    padding: 7px 40px 10px 40px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display:inline-block;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.img .projectButton5:hover {
+    background: white;
+    color: #ff80d5;
+}
+
 .site-main .work-experience {
     background: #ffffff10;
     box-shadow: var(--box-shadow);
@@ -505,6 +524,21 @@ footer.footer-area .social a:hover > i {
   
   .close:hover,
   .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    width: 10%;
+  }
+  
+  .close2:hover,
+  .close2:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
@@ -667,6 +701,12 @@ footer.footer-area .social a:hover > i {
       right: 0px;
       top: -5px;
   }
+
+  .close2 {
+    position: absolute;
+    right: 0px;
+    top: -5px;
+}
   
   
   
@@ -926,3 +966,15 @@ footer.footer-area .social a:hover > i {
   .contact100-more-highlight {
     color: #ff4b5a;
   }
+
+  
+
+  .readmore {
+    width:330px;
+}
+.readmore .moreText {
+    display:none;
+}
+.readmore a.more {
+    display:block;
+}

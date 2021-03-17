@@ -32,6 +32,13 @@
             padding: 10px;
             border-radius: 10px;
         }
+
+        .header_area .main-menu .navbar-nav a:hover {
+            background: red;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+}
     </style>
 </head>
 <body>
@@ -48,17 +55,32 @@
                 </button>
               
                 <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto text-center w-100 justify-content-end ml-lg-0 d-lg-flex align-items-center">
-                    <div class="nav-item h-100"><a class="nav-link active" href="#">Home</a></div>
-                    <div class="nav-item h-100"><a class="nav-link"href="#about-area">About</a></div>
-                    <div class="nav-item h-100"><a class="nav-link"href="#about-area">About</a></div>
-                    <div class="nav-item h-100"><a class="nav-link"href="#about-area">About</a></div>
-                    <div class="nav-item h-100"><a class="nav-link" href="#services-area">Portfolio</a></div>
-                    <div class="nav-item h-100"><a class="nav-link" href="#footer">Contact</a></div>
-                  </ul>
-                </div>
-              </nav>
-        </div>
+                    <ul class="navbar-nav ml-auto text-center w-100 justify-content-end ml-lg-0 d-lg-flex align-items-center">
+                      <div class="nav-item h-100"><a class="nav-link active" href="../index.html">Home</a></div>
+                      <div class="nav-item h-100"><a class="nav-link"href="../index.html#about-area">About</a></div>
+                      <div class="nav-item h-100"><a class="nav-link"href="../index.html#skills-area">Skills</a></div>
+                      <div class="nav-item h-100"><a class="nav-link"href="../index.html#workExperience">Experience</a></div>
+                      <div class="nav-item h-100"><a class="nav-link" href="../index.html#project-area">Projects</a></div>
+                      <div class="nav-item h-100"><a class="nav-link" href="../index.html#footer">Contact</a></div>
+                    </ul>
+                  </div>
+  
+                  <div class="mobile-bar" onclick="showHamburgerMenuLinks()">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </div>
+  
+                  <div id="hamburgerLinks">
+                      <a class="nav-link active" href="../index.html">Home</a>
+                      <a class="nav-link"href="../index.html#about-area">About</a>
+                      <a class="nav-link"href="../index.html#skills-area">Skills</a>
+                      <a class="nav-link"href="../index.html#workExperience">Experience</a>
+                      <a class="nav-link" href="../index.html#project-area">Projects</a>
+                      <a class="nav-link" href="../index.html#footer">Contact</a>
+                    </div>
+                </nav>
+          </div>
     </header>
 
     <section style="padding: 30px 50px 0 50px;">
