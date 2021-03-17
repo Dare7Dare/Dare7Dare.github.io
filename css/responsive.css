@@ -5,6 +5,80 @@
 }
 
 @media only screen and (max-width:1200px) {
+
+    .projectImage {
+        width: 250px;
+        height: 250px;
+    }
+
+    .img .projectButton1 {
+        position: absolute;
+        bottom: 20px;
+        right: 70px;
+        border: none;
+        background: black;
+        color: red;
+        font-size: 14px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display:inline-block;
+        justify-content: center;
+        text-decoration: none;
+        }
+    
+        .img .projectButton2 {
+            position: absolute;
+            bottom: 20px;
+            right: 70px;
+            border: none;
+            background: white;
+            color: blue;
+            font-size: 14px;
+            padding: 5px 20px 5px 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            display:inline-block;
+            justify-content: center;
+            text-decoration: none;
+            }
+    
+            .img .projectButton3 {
+                position: absolute;
+                bottom: 20px;
+                right: 70px;
+                border: none;
+                background: white;
+                color: grey;
+                font-size: 14px;
+                padding: 5px 20px 5px 20px;
+                border-radius: 10px;
+                margin: 0 auto;
+                display:inline-block;
+                justify-content: center;
+                text-decoration: none;
+                }
+    
+                .img .projectButton4 {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 70px;
+                    border: none;
+                    background: white;
+                    color: black;
+                    font-size: 14px;
+                    padding: 5px 20px 5px 20px;
+                    border-radius: 10px;
+                    margin: 0 auto;
+                    display:inline-block;
+                    justify-content: center;
+                    text-decoration: none;
+                    }
+
+    .site-main .project-area .grid .our-project > .title h4 {
+        font: normal 700 18px/12px var(--roboto);
+    }
+
     .header_area .main-menu .navbar .navbar-brand {
         padding: 0;
     }
@@ -58,7 +132,396 @@
     }
 }
 
+@media (max-width: 992px) {
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .wrap-contact100 {
+        padding-top: 27px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .wrap-input100 {
+        width: 100%;
+        position: relative;
+        border-bottom: 2px solid #d9d9d9;
+        padding-bottom: 0px;
+        margin-bottom: 55px;
+      }
+
+
+
+    .contact100-form-title {
+        display: block;
+        width: 100%;
+        font-family: Poppins-Bold;
+        color: #333333;
+        line-height: 1.2;
+        text-align: left;
+        margin-top: -20px;
+        padding-bottom: 20px;
+        font: normal 500 20px/ 25px var(--roboto);
+        text-transform: uppercase;
+      }
+  }
+
+  @media (max-width: 825px) {
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .wrap-contact100 {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .wrap-input100 {
+        width: 100%;
+        position: relative;
+        border-bottom: 2px solid #d9d9d9;
+        padding-bottom: 0px;
+        margin-bottom: 55px;
+      }
+
+
+
+    .contact100-form-title {
+        display: block;
+        width: 100%;
+        font-family: Poppins-Bold;
+        color: #333333;
+        line-height: 1.2;
+        text-align: left;
+        margin-top: -20px;
+        padding-bottom: 20px;
+        font: normal 500 17px/ 22px var(--roboto);
+        text-transform: uppercase;
+      }
+  }
+
+  @media (max-width: 730px) {
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .input100 {
+        display: block;
+        width: 100%;
+        background: transparent;
+        font-family: Poppins-SemiBold;
+        font-size: 14px;
+        color: #555555;
+        line-height: 1.2;
+        padding: 0 5px;
+      }
+
+    .wrap-contact100 {
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .wrap-input100 {
+        width: 100%;
+        position: relative;
+        border-bottom: 2px solid #d9d9d9;
+        padding-bottom: 0px;
+        margin-bottom: 55px;
+      }
+
+
+
+    .contact100-form-title {
+        display: block;
+        width: 100%;
+        font-family: Poppins-Bold;
+        color: #333333;
+        line-height: 1.2;
+        text-align: left;
+        margin-top: -20px;
+        padding-bottom: 20px;
+        font: normal 500 17px/ 22px var(--roboto);
+        text-transform: uppercase;
+      }
+  }
+
+  @media (max-width: 500px) {
+
+    .modal-content {
+        width: 80%;
+    }
+
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .container-contact100 {
+        max-height: 300px;
+    }
+
+    .wrap-contact100 {
+        max-height: 400px;
+    }
+
+    .input100 {
+        display: block;
+        width: 100%;
+        background: transparent;
+        font-family: Poppins-SemiBold;
+        font-size: 14px;
+        color: #555555;
+        line-height: 1.2;
+        padding: 0 5px;
+      }
+
+    .wrap-contact100 {
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .wrap-input100 {
+        width: 100%;
+        position: relative;
+        border-bottom: 2px solid #d9d9d9;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+      }
+
+      .contact100-form-btn {
+          margin-top: 20px;
+          height: 30px;
+          width: 70px !important;
+      }
+
+
+    .contact100-form-title {
+        display: block;
+        width: 100%;
+        font-family: Poppins-Bold;
+        color: #333333;
+        line-height: 1.2;
+        text-align: left;
+        margin-top: -20px;
+        padding-bottom: 20px;
+        font: normal 500 14px/ 19px var(--roboto);
+        text-transform: uppercase;
+      }
+
+      .close {
+          top: -7px;
+      }
+  }
+
+  @media (max-width: 465px) {
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .container-contact100 {
+        max-height: 300px;
+    }
+
+    .wrap-contact100 {
+        max-height: 400px;
+    }
+
+    .input100 {
+        display: block;
+        width: 100%;
+        background: transparent;
+        font-family: Poppins-SemiBold;
+        font-size: 14px;
+        color: #555555;
+        line-height: 1.2;
+        padding: 0 5px;
+      }
+
+    .wrap-contact100 {
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .wrap-input100 {
+        width: 100%;
+        position: relative;
+        border-bottom: 2px solid #d9d9d9;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+      }
+
+      .contact100-form-btn {
+          margin-top: 20px;
+          height: 30px;
+          width: 70px !important;
+      }
+
+
+    .contact100-form-title {
+        display: block;
+        width: 100%;
+        font-family: Poppins-Bold;
+        color: #333333;
+        line-height: 1.2;
+        text-align: left;
+        margin-top: -20px;
+        padding-bottom: 20px;
+        font: normal 500 14px/ 19px var(--roboto);
+        text-transform: uppercase;
+      }
+
+      .close {
+          top: -7px;
+          right: 10px;
+      }
+  }
+
+  @media (max-width: 420px) {
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .container-contact100 {
+        max-height: 250px;
+        min-width: 200px;
+    }
+
+    .wrap-contact100 {
+        max-height: 370px;
+        min-width: 300px !important;
+    }
+
+    .input100 {
+        display: block;
+        width: 100%;
+        background: transparent;
+        font-family: Poppins-SemiBold;
+        font-size: 14px;
+        color: #555555;
+        line-height: 1.2;
+        padding: 0 5px;
+      }
+
+    .wrap-contact100 {
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .wrap-input100 {
+        width: 100%;
+        position: relative;
+        border-bottom: 2px solid #d9d9d9;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+      }
+
+      .contact100-form-btn {
+          margin-top: 20px;
+          height: 30px;
+          width: 70px !important;
+      }
+
+
+    .contact100-form-title {
+        display: block;
+        width: 100%;
+        font-family: Poppins-Bold;
+        color: #333333;
+        line-height: 1.2;
+        text-align: left;
+        margin-top: -20px;
+        padding-bottom: 20px;
+        font: normal 500 14px/ 19px var(--roboto);
+        text-transform: uppercase;
+      }
+
+      .close {
+          top: -27px;
+          right: 10px;
+      }
+  }
+
+  @media (max-width: 420px) {
+    .alert-validate::before {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .container-contact100 {
+        max-height: 250px;
+        min-width: 200px;
+    }
+
+    .wrap-contact100 {
+        max-height: 370px;
+        min-width: 300px !important;
+    }
+
+    .input100 {
+        display: block;
+        width: 100%;
+        background: transparent;
+        font-family: Poppins-SemiBold;
+        font-size: 14px;
+        color: #555555;
+        line-height: 1.2;
+        padding: 0 5px;
+      }
+
+    .wrap-contact100 {
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .wrap-input100 {
+        width: 100%;
+        position: relative;
+        border-bottom: 2px solid #d9d9d9;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+      }
+
+      .contact100-form-btn {
+          margin-top: 20px;
+          height: 30px;
+          width: 70px !important;
+      }
+
+
+    .contact100-form-title {
+        display: block;
+        width: 100%;
+        font-family: Poppins-Bold;
+        color: #333333;
+        line-height: 1.2;
+        text-align: left;
+        margin-top: -20px;
+        padding-bottom: 20px;
+        font: normal 500 14px/ 19px var(--roboto);
+        text-transform: uppercase;
+      }
+
+      .close {
+          top: -27px;
+          right: 10px;
+      }
+  }
+
 @media only screen and (max-width:993px) {
+
+    
 
     .breakLine1 {
         display: block;
@@ -143,6 +606,70 @@
     .site-main .site-banner .site-title h1 {
         font: normal bold 30px/ 30px var(--roboto);
     }
+
+    .img .projectButton1 {
+        position: absolute;
+        bottom: 20px;
+        right: 110px;
+        border: none;
+        background: black;
+        color: red;
+        font-size: 14px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display:inline-block;
+        justify-content: center;
+        text-decoration: none;
+        }
+    
+        .img .projectButton2 {
+            position: absolute;
+            bottom: 20px;
+            right: 110px;
+            border: none;
+            background: white;
+            color: blue;
+            font-size: 14px;
+            padding: 5px 20px 5px 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            display:inline-block;
+            justify-content: center;
+            text-decoration: none;
+            }
+    
+            .img .projectButton3 {
+                position: absolute;
+                bottom: 20px;
+                right: 110px;
+                border: none;
+                background: white;
+                color: grey;
+                font-size: 14px;
+                padding: 5px 20px 5px 20px;
+                border-radius: 10px;
+                margin: 0 auto;
+                display:inline-block;
+                justify-content: center;
+                text-decoration: none;
+                }
+    
+                .img .projectButton4 {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 110px;
+                    border: none;
+                    background: white;
+                    color: black;
+                    font-size: 14px;
+                    padding: 5px 20px 5px 20px;
+                    border-radius: 10px;
+                    margin: 0 auto;
+                    display:inline-block;
+                    justify-content: center;
+                    text-decoration: none;
+                    }
 }
 
 @media only screen and (max-width:910px) {
@@ -232,6 +759,71 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    .img .projectButton1 {
+        position: absolute;
+        bottom: 20px;
+        right: 300px;
+        border: none;
+        background: black;
+        color: red;
+        font-size: 14px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display:inline-block;
+        justify-content: center;
+        text-decoration: none;
+        }
+    
+        .img .projectButton2 {
+            position: absolute;
+            bottom: 20px;
+            right: 300px;
+            border: none;
+            background: white;
+            color: blue;
+            font-size: 14px;
+            padding: 5px 20px 5px 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            display:inline-block;
+            justify-content: center;
+            text-decoration: none;
+            }
+    
+            .img .projectButton3 {
+                position: absolute;
+                bottom: 20px;
+                right: 300px;
+                border: none;
+                background: white;
+                color: grey;
+                font-size: 14px;
+                padding: 5px 20px 5px 20px;
+                border-radius: 10px;
+                margin: 0 auto;
+                display:inline-block;
+                justify-content: center;
+                text-decoration: none;
+                }
+    
+                .img .projectButton4 {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 300px;
+                    border: none;
+                    background: white;
+                    color: black;
+                    font-size: 14px;
+                    padding: 5px 20px 5px 20px;
+                    border-radius: 10px;
+                    margin: 0 auto;
+                    display:inline-block;
+                    justify-content: center;
+                    text-decoration: none;
+                    }
+
     .workExperienceImage {
         padding-left: 10px !important;
     }
@@ -281,9 +873,6 @@
     }
 }
 
-@media only screen and (max-width: 575px) {
-    
-}
 
 @media only screen and (max-width:560px) {
     .site-main .site-banner {
@@ -610,6 +1199,73 @@
 }
 
 @media only screen and (max-width:400px) {
+
+    @media (max-width: 420px) {
+        .alert-validate::before {
+          visibility: visible;
+          opacity: 1;
+        }
+    
+        .container-contact100 {
+            max-height: 250px;
+            min-width: 200px;
+        }
+    
+        .wrap-contact100 {
+            max-height: 370px;
+            min-width: 300px !important;
+        }
+    
+        .input100 {
+            display: block;
+            width: 100%;
+            background: transparent;
+            font-family: Poppins-SemiBold;
+            font-size: 14px;
+            color: #555555;
+            line-height: 1.2;
+            padding: 0 5px;
+          }
+    
+        .wrap-contact100 {
+            padding-top: 10px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    
+        .wrap-input100 {
+            width: 100%;
+            position: relative;
+            border-bottom: 2px solid #d9d9d9;
+            padding-bottom: 0px;
+            margin-bottom: 20px;
+          }
+    
+          .contact100-form-btn {
+              margin-top: 20px;
+              height: 30px;
+              width: 70px !important;
+          }
+    
+    
+        .contact100-form-title {
+            display: block;
+            width: 100%;
+            font-family: Poppins-Bold;
+            color: #333333;
+            line-height: 1.2;
+            text-align: left;
+            margin-top: -20px;
+            padding-bottom: 20px;
+            font: normal 500 14px/ 19px var(--roboto);
+            text-transform: uppercase;
+          }
+    
+          .close {
+              top: -27px;
+              right: 10px;
+          }
+      }
     
     footer.footer-area .social a > i {
         font-size: 22px;
@@ -1034,3 +1690,135 @@
 
 
 
+
+@media only screen and (max-width: 470px) {
+    .img .projectButton1 {
+        position: absolute;
+        bottom: 20px;
+        right: 180px;
+        border: none;
+        background: black;
+        color: red;
+        font-size: 14px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display:inline-block;
+        justify-content: center;
+        text-decoration: none;
+        }
+    
+        .img .projectButton2 {
+            position: absolute;
+            bottom: 20px;
+            right: 180px;
+            border: none;
+            background: white;
+            color: blue;
+            font-size: 14px;
+            padding: 5px 20px 5px 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            display:inline-block;
+            justify-content: center;
+            text-decoration: none;
+            }
+    
+            .img .projectButton3 {
+                position: absolute;
+                bottom: 20px;
+                right: 180px;
+                border: none;
+                background: white;
+                color: grey;
+                font-size: 14px;
+                padding: 5px 20px 5px 20px;
+                border-radius: 10px;
+                margin: 0 auto;
+                display:inline-block;
+                justify-content: center;
+                text-decoration: none;
+                }
+    
+                .img .projectButton4 {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 180px;
+                    border: none;
+                    background: white;
+                    color: black;
+                    font-size: 14px;
+                    padding: 5px 20px 5px 20px;
+                    border-radius: 10px;
+                    margin: 0 auto;
+                    display:inline-block;
+                    justify-content: center;
+                    text-decoration: none;
+                    }
+}
+
+@media only screen and (max-width: 360px) {
+    .img .projectButton1 {
+        position: absolute;
+        bottom: 20px;
+        right: 80px;
+        border: none;
+        background: black;
+        color: red;
+        font-size: 14px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+        display:inline-block;
+        justify-content: center;
+        text-decoration: none;
+        }
+    
+        .img .projectButton2 {
+            position: absolute;
+            bottom: 20px;
+            right: 80px;
+            border: none;
+            background: white;
+            color: blue;
+            font-size: 14px;
+            padding: 5px 20px 5px 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            display:inline-block;
+            justify-content: center;
+            text-decoration: none;
+            }
+    
+            .img .projectButton3 {
+                position: absolute;
+                bottom: 20px;
+                right: 80px;
+                border: none;
+                background: white;
+                color: grey;
+                font-size: 14px;
+                padding: 5px 20px 5px 20px;
+                border-radius: 10px;
+                margin: 0 auto;
+                display:inline-block;
+                justify-content: center;
+                text-decoration: none;
+                }
+    
+                .img .projectButton4 {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 80px;
+                    border: none;
+                    background: white;
+                    color: black;
+                    font-size: 14px;
+                    padding: 5px 20px 5px 20px;
+                    border-radius: 10px;
+                    margin: 0 auto;
+                    display:inline-block;
+                    justify-content: center;
+                    text-decoration: none;
+                    }
+}
