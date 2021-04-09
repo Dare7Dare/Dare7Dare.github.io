@@ -641,7 +641,7 @@
                             <div class="img">
                                 <a href="./images/PSS/PSSWelcome.png" class="test-popup-link">
                                     <img src="./images/PSS/PSSWelcome.png" height="350" width="350" alt="Portfolio-1" class="projectImage">
-                                    <a href="projects/PSS.html" class="projectButton1">View Project</a>
+                                    <a href="projects/PSS.html" class="projectButton1" target="_blank">View Project</a>
                                 </a>
                             </div>
                             <div class="title py-4">
@@ -655,7 +655,7 @@
                             <div class="img">
                                 <a href="./images/HSS/HSSWelcome.jpg" class="test-popup-link">
                                     <img src="./images/HSS/HSSWelcome.jpg" height="400" width="350" alt="Portfolio-2" class="projectImage">
-                                    <a href="projects/HSS.html" class="projectButton2">View Project</a>
+                                    <a href="projects/HSS.html" class="projectButton2" target="_blank">View Project</a>
                                 </a>
                             </div>
                             <div class="title py-4">
@@ -669,7 +669,7 @@
                             <div class="img">
                                 <a href="./images/SEG/HOMESCREEN.jpg" class="test-popup-link">
                                     <img src="./images/SEG/HOMESCREEN.jpg" height="350" width="350" alt="Portfolio-3" class="projectImage">
-                                    <a href="projects/SEG.html" class="projectButton3">View Project</a>
+                                    <a href="projects/SEG.html" class="projectButton3" target="_blank">View Project</a>
                                 </a>
                             </div>
                             <div class="title py-4">
@@ -683,7 +683,7 @@
                             <div class="img">
                                 <a href="./images/OnlineGallery/Gallery1.jpg" class="test-popup-link">
                                     <img src="./images/OnlineGallery/Gallery1.jpg" height="350" width="350" alt="Portfolio-4" class="projectImage">
-                                    <a href="./Dejan Kolevski Online Gallery/index.html" class="projectButton4">View Project</a>
+                                    <a href="./Dejan Kolevski Online Gallery/index.html" class="projectButton4" target="_blank">View Project</a>
                                 </a>
                             </div>
                             <div class="title py-4 titleBigDevice">
@@ -702,7 +702,7 @@
                             <div class="img">
                                 <a href="./images/OnlineGallery/Gallery1.jpg" class="test-popup-link">
                                     <img src="./images/missSofija/missSofija.jpg" height="350" width="350" alt="Portfolio-4" class="projectImage">
-                                    <a href="./Beauty Studio Miss Sofija/index.html" class="projectButton5">View Project</a>
+                                    <a href="./Beauty Studio Miss Sofija/index.html" class="projectButton5" target="_blank">View Project</a>
                                 </a>
                             </div>
                             <div class="title py-4 titleBigDevice">
@@ -829,5 +829,48 @@
     <script src="./vendor/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
     <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+    const navMenu = document.getElementById('nav-menu'),
+toggleMenu = document.getElementById('nav-toggle'),
+closeMenu = document.getElementById('nav-close');
+
+toggleMenu.addEventListener('click', () => {
+    navMenu.classList.add('show')
+})
+
+closeMenu.addEventListener('click', () => {
+    navMenu.classList.remove('show')
+})
+
+
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction() {
+    navMenu.classList.remove('show')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+const sections = document.querySelectorAll('section[id]')
+
+window.addEventListener('scroll', scrollActive)
+
+function scrollActive() {
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.add('active')
+        }
+        else {
+            document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.remove('active')
+        }
+    })
+}
+</script>
 </body>
 </html>

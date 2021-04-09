@@ -168,12 +168,19 @@ $(function(){
     });
 });
 
+
+
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
 const navMenu = document.getElementById('nav-menu'),
 toggleMenu = document.getElementById('nav-toggle'),
 closeMenu = document.getElementById('nav-close');
 
 toggleMenu.addEventListener('click', () => {
-    navMenu.classList.toggle('show')
+    navMenu.classList.add('show')
 })
 
 closeMenu.addEventListener('click', () => {
@@ -208,10 +215,5 @@ function scrollActive() {
         }
     })
 }
-
-
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  }
 
 });
