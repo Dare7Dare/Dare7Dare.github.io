@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,500&display=swap" rel="stylesheet">
 
 </head>
@@ -26,7 +27,7 @@
     <header class="header_area">
         <div class="main-menu">
             <nav class="navbar navbar-expand-md p-3 mb-2 navbar-custom-color">   
-                    <h2 class="navbar-brand">My personal web portfolio</h2>
+                    <h2 class="navbar-brand">Darko Kolevski - Web Portfolio</h2>
               
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav ml-auto text-center w-100 justify-content-end ml-lg-0 d-lg-flex align-items-center">
@@ -39,7 +40,7 @@
                   </ul>
                 </div>
 
-                <div class="mobile-bar" onclick="showHamburgerMenuLinks()">
+                <!-- <div class="mobile-bar" onclick="showHamburgerMenuLinks()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -52,17 +53,160 @@
                     <a class="nav-link"href="#workExperience">Experience</a>
                     <a class="nav-link" href="#project-area">Projects</a>
                     <a class="nav-link" href="#footer">Contact</a>
-                  </div>
+                  </div> -->
+
+                  <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu menu-icon"></i>
+            </div>
+            <div>
+                <a href="#" class="nav__logo"></a>
+            </div>
+            <div class="nav__menu show" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about-area" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills-area" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#workExperience" class="nav__link">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#project-area" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <div class="socials" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <h5 style="padding-top: 3rem; color: white;">SOCIAL MEDIA</h5>
+                            <div class="" style="display: flex; justify-content: center; align-items: center; gap: 33px;">
+                                <a href="https://www.linkedin.com/in/darko-kolevski-679a381aa/" target="_blank" style="color: white; text-decoration:none; font-size: 20px;"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/dare7official/?hl=en" target="_blank" style="color: white; text-decoration:none; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
               </nav>
         </div>
     </header>
 
     <main class="site-main">
 
-        <section class="site-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="site-title col colHome">
+        <section class="site-banner" id="site-banner">
+
+            
+            <div class="imageWelcome">
+                <img src="./images/CV1.png" alt="banner-img" class="img-fluid">
+                
+            <div class="detailsWelcome">
+                <div class="userDetails">
+                            <div class="contactdetails userDetailsItem">
+                                <p>Location & Contact Information</p>
+                            </div>
+                            <div class="location userDetailsItem">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Skopje, Macedonia</p>
+                            </div>
+                            <div class="phone userDetailsItem">
+                                <i class="fas fa-phone-alt"></i>
+                                <p>+389 71 740 210</p>
+                            </div>
+                            <div class="email userDetailsItem">
+                                <i class="fas fa-envelope"></i>
+                                <p>kolevski7darko@gmail.com</p>
+                            </div>
+                        </div>
+            </div>
+            </div>
+
+            <div class="welcomeText">
+                <div class="titleWelcome">
+                <h3 class="greetingText" id="greeting"></h3>
+                    <h1 class="myNameIs text-uppercase">My name is</h1>
+                    <h1 class="Name text-uppercase">Darko Kolevski</h1>
+                    <h4 class="jobPosition text-uppercase">Junior Front End Developer</h4>
+                    <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase button1" id="button1">Hire me!</button>
+                                <div id="myModal" class="modal">
+
+                                    
+                                    <div class="modal-content">
+                                      
+                                      <div class="container-contact100">            
+                                        <div class="wrap-contact100">
+                                          <form class="contact100-form validate-form" action="https://formspree.io/f/xqkgrpgl" method="POST" id="my-form">
+                                            <div class="row firstFormRow">
+                                                <span class="contact100-form-title">
+                                                    Contact Me Via Email
+                                                  </span>
+                                                  <span class="close">&times;</span>
+                                            </div>
+                                    
+                                            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                                              <span class="label-input100">Your Name</span>
+                                              <input class="input100" type="text" name="name" id="name" placeholder="Enter your name">
+                                              <span class="focus-input100"></span>
+                                            </div>
+                                    
+                                            <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                                              <span class="label-input100">Email</span>
+                                              <input class="input100" type="text" name="email" id="email" placeholder="Enter your email addess">
+                                              <span class="focus-input100"></span>
+                                            </div>
+                                    
+                                            <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                                              <span class="label-input100">Message</span>
+                                              <textarea class="input100" name="message" id="message" placeholder="Your message here..."></textarea>
+                                              <span class="focus-input100"></span>
+                                            </div>
+                                    
+                                            <div class="container-contact100-form-btn">
+                                              <button class="contact100-form-btn" type="submit">
+                                                <span>
+                                                  Submit
+                                                  <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                                                </span>
+                                              </button>
+                                            </div>
+                                          </form>
+                                        </div>
+                                        </div>
+                                    </div>
+                                  
+                                  </div>
+                                <a href="./Darko Kolevski.pdf" download="Darko Kolevski CV">
+                                <button type="button" class="btn button secondary-button text-uppercase button2">Download CV</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="socials">
+                            <h5 class="socialsTitle">SOCIAL MEDIA</h5>
+                            <div class="socialsIconsDiv">
+                                <a href="https://www.linkedin.com/in/darko-kolevski-679a381aa/" target="_blank" class="linkedInIconStyle"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/dare7official/?hl=en" target="_blank" class="instagramIconStyle"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+            </div>
+
+
+            </div>
+
+
+            <!-- <div class="container">
+                <div class="row firstWelcomeRow">
+                    <div class="site-title col col-lg-6 colHome">
                         <h3 class="title-text" id="greeting"></h3>
                         <h1 class="title-text text-uppercase">My name is</h1>
                         <h1 class="title-text text-uppercase">Darko Kolevski</h1>
@@ -72,7 +216,7 @@
                                 <button type="button" class="btn button primary-button mr-4 text-uppercase button1" id="button1">Hire me!</button>
                                 <div id="myModal" class="modal">
 
-                                    <!-- Modal content -->
+                                    
                                     <div class="modal-content">
                                       
                                       <div class="container-contact100">            
@@ -132,7 +276,7 @@
                                 <button type="button" class="btn button primary-button mr-4 text-uppercase button12" id="button12">Hire me!</button>
                                 <div id="myModal2" class="modal">
 
-                                    <!-- Modal content -->
+                                    
                                     <div class="modal-content">
                                       
                                       <div class="container-contact100">            
@@ -185,9 +329,26 @@
                     </div>
                     <div class="banner-image col-lg-5 colHome1">
                         <img src="./images/CV1.png" alt="banner-img" class="img-fluid">
+                        <div class="userDetails">
+                            <div class="contactdetails userDetailsItem">
+                                <p>Location & Contact Information</p>
+                            </div>
+                            <div class="location userDetailsItem">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Skopje, Macedonia</p>
+                            </div>
+                            <div class="phone userDetailsItem">
+                                <i class="fas fa-phone-alt"></i>
+                                <p>+389 71 740 210</p>
+                            </div>
+                            <div class="email userDetailsItem">
+                                <i class="fas fa-envelope"></i>
+                                <p>kolevski7darko@gmail.com</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <section class="about-area" id="about-area">

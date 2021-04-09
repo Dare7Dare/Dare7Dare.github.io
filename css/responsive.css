@@ -14,7 +14,7 @@
     .img .projectButton1 {
         position: absolute;
         bottom: 20px;
-        right: 70px;
+        right: 120px;
         border: none;
         background: black;
         color: red;
@@ -30,7 +30,7 @@
         .img .projectButton2 {
             position: absolute;
             bottom: 20px;
-            right: 70px;
+            right: 120px;
             border: none;
             background: white;
             color: blue;
@@ -46,7 +46,7 @@
             .img .projectButton3 {
                 position: absolute;
                 bottom: 20px;
-                right: 70px;
+                right: 120px;
                 border: none;
                 background: white;
                 color: grey;
@@ -62,7 +62,7 @@
                 .img .projectButton4 {
                     position: absolute;
                     bottom: 20px;
-                    right: 70px;
+                    right: 120px;
                     border: none;
                     background: white;
                     color: black;
@@ -78,7 +78,7 @@
                     .img .projectButton5 {
                         position: absolute;
                         bottom: 20px;
-                        right: 70px;
+                        right: 120px;
                         border: none;
                         background: #ff80d5;
                         color: white;
@@ -103,7 +103,7 @@
         padding-top: 20%;
     }
 
-    .colHome {
+    /* .colHome {
         width: 70%;
         float: left;
         padding-top: 0 !important;
@@ -112,7 +112,26 @@
     .colHome1 {
         width: 30%;
         float: left;
+    } */
+
+    /* .colHome {
+        width: 40%;
+        padding-left: 50px !important; 
     }
+
+    .colHome1 {
+        padding-left: 50px !important;
+    }
+
+    .site-main .site-banner .banner-image > img {
+        width: 20rem;
+        padding-top: 0 !important;
+    }
+
+    .userDetails {
+        padding-left: 20px;
+        padding-top: 100px;
+    } */
 
     .site-main .site-banner .site-title h3 {
         padding-top: 5%;
@@ -626,7 +645,7 @@
     .img .projectButton1 {
         position: absolute;
         bottom: 20px;
-        right: 110px;
+        right: 220px;
         border: none;
         background: black;
         color: red;
@@ -642,7 +661,7 @@
         .img .projectButton2 {
             position: absolute;
             bottom: 20px;
-            right: 110px;
+            right: 220px;
             border: none;
             background: white;
             color: blue;
@@ -658,7 +677,7 @@
             .img .projectButton3 {
                 position: absolute;
                 bottom: 20px;
-                right: 110px;
+                right: 220px;
                 border: none;
                 background: white;
                 color: grey;
@@ -674,7 +693,7 @@
                 .img .projectButton4 {
                     position: absolute;
                     bottom: 20px;
-                    right: 110px;
+                    right: 220px;
                     border: none;
                     background: white;
                     color: black;
@@ -690,7 +709,7 @@
                     .img .projectButton4 {
                         position: absolute;
                         bottom: 20px;
-                        right: 110px;
+                        right: 220px;
                         border: none;
                         background: #ff80d5;
                         color: white;
@@ -718,6 +737,16 @@
     }
 }
 
+@media only screen and (min-width: 891px) {
+    .nav__toggle {
+    display: none;
+}
+    .nav__menu {
+        display: none;
+    }
+
+}
+
 @media only screen and (max-width:890px) {
     .header_area .main-menu .nav-item .nav-link {
         display: none;
@@ -727,18 +756,108 @@
         width: 100%;
     }
 
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
     .header_area .main-menu .navbar .navbar-brand {
         float: left;
         padding: 0;
-        padding-left: 20px;
         width: 70%;
     }
     
-    .mobile-bar {
+    /* .mobile-bar {
         display: flex;
         float: right;
         cursor: pointer;
-    }
+    } */
+
+    .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    padding-left: 30px !important;
+
+}
+
+.nav__menu {
+    z-index: 5000;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 75%;
+    height: 100vh;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-color2);
+    transition: .5s;
+}
+
+.nav__close {
+    position: absolute;
+    top: .2rem;
+    right: .1rem;
+    font-size: 2.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.nav__item {
+    margin-bottom: 2rem;
+}
+
+.nav__link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: var(--font-bold);
+    transition: .3s;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: white;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0 !important;
+}
+
+.nav__toggle {
+    color: black;
+    font-size: 1.3rem;
+    cursor: pointer;
+    line-height: 3rem;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.menu-icon {
+    font-size: 2rem;
+    color: #4458dc;
+}
+
+.show {
+    left: 0;
+}
+
+.active {
+    color: black;
+}
 
     .title-text {
         font: normal bold 30px/ 30px var(--roboto);
@@ -1187,7 +1306,7 @@
         line-height: 50px;
         color: #fff;
       }
-      #fixedButton.show {
+      #fixedButton.showTop {
         opacity: 1;
         visibility: visible;
       }
@@ -1395,6 +1514,129 @@
     .titles {
         font: normal bold 24px/ 29px var(--roboto) !important;
     }
+    
+.site-banner {
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleWelcome {  
+  margin-top: -70px;
+  padding-top: 10px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.greetingText {
+  font: normal bold 20px/ 25px var(--roboto);
+}
+
+.myNameIs {
+  font: normal bold 30px/ 35px var(--roboto);
+}
+
+.Name {
+  font: normal bold 30px/ 35px var(--roboto);
+}
+
+.jobPosition {
+  font: normal bold 16px/ 20px var(--roboto);
+}
+
+.imageWelcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid blue;
+}
+
+.button.secondary-button {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.imageWelcome > img{
+  width: 8rem;
+  height: 8rem;
+}
+
+.firstContainer {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.colHome1 {
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userDetailsItem > p {
+  margin-bottom: 0 !important;
+  margin-top: -3px;
+}
+
+.userDetailsItem > i {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.contactdetails > p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userDetailsItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+  gap: 20px;
+  width: 250px;
+}
+
+
+
+.detailsWelcome {
+    width: 280px;
+}
+
+.socials {
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+
+.socialsIconsDiv {
+  display: flex; justify-content: center; align-items: center; gap: 50px;
+}
+
+.socialsTitle {
+  padding-top: 1rem; color: black;
+}
+
+.linkedInIconStyle {
+  color: #0077b5; text-decoration:none; font-size: 35px;
+}
+
+.instagramIconStyle {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; text-decoration:none; font-size: 35px;
+}
 }
 
 @media only screen and (max-width:427px) {
@@ -1602,7 +1844,7 @@
         line-height: 50px;
         color: #fff;
       }
-      #fixedButton.show {
+      #fixedButton.showTop {
         opacity: 1;
         visibility: visible;
       }
@@ -1742,6 +1984,10 @@
         left: 23px;
         font-size: 13px;
     }
+
+    .header_area .main-menu .navbar .navbar-brand {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -1789,8 +2035,6 @@
 @media only screen and (max-width:420px) {
     .header_area .main-menu .navbar .navbar-brand {
         padding: 0;
-        padding-left: 20px;
-        width: 100%;
         text-align: center;
         margin: 0 auto;
     }
@@ -1813,8 +2057,6 @@
 @media only screen and (max-width:345px) {
     .header_area .main-menu .navbar .navbar-brand {
         padding: 0;
-        padding-left: 20px;
-        width: 100%;
         text-align: center;
         margin: 0 auto;
     }

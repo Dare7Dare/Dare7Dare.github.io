@@ -56,9 +56,9 @@ $('.project-area .grid').isotope({
 
 $(window).scroll(function() {
   if ($(window).scrollTop() > 100) {
-    btn.addClass('show');
+    btn.addClass('showTop');
   } else {
-    btn.removeClass('show');
+    btn.removeClass('showTop');
   }
 });
 
@@ -82,19 +82,19 @@ function getDateTime() {
     var now     = new Date(); 
     var hour    = now.getHours(); 
    if (hour < 5){  
-      document.getElementById('greeting').innerHTML = "Good Night";
+      document.getElementById('greeting').innerHTML = "Good Night!";
    }
    else if (hour < 12){
-         document.getElementById('greeting').innerHTML = "Good Morning";
+         document.getElementById('greeting').innerHTML = "Good Morning!";
     }
     else if (hour < 19){
-        document.getElementById('greeting').innerHTML = "Good Afternoon";
+        document.getElementById('greeting').innerHTML = "Good Afternoon!";
     }
     else if (hour < 23){
-        document.getElementById('greeting').innerHTML = "Good Evening";
+        document.getElementById('greeting').innerHTML = "Good Evening!";
     }
     else{
-        document.getElementById('greeting').innerHTML = "Good Night";
+        document.getElementById('greeting').innerHTML = "Good Night!";
     }
 }
 
@@ -167,6 +167,47 @@ $(function(){
         }
     });
 });
+
+const navMenu = document.getElementById('nav-menu'),
+toggleMenu = document.getElementById('nav-toggle'),
+closeMenu = document.getElementById('nav-close');
+
+toggleMenu.addEventListener('click', () => {
+    navMenu.classList.toggle('show')
+})
+
+closeMenu.addEventListener('click', () => {
+    navMenu.classList.remove('show')
+})
+
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction() {
+    navMenu.classList.remove('show')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+const sections = document.querySelectorAll('section[id]')
+
+window.addEventListener('scroll', scrollActive)
+
+function scrollActive() {
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.add('active')
+        }
+        else {
+            document.querySelector('.nav__menu a[href*='+ sectionId +']').classList.remove('active')
+        }
+    })
+}
 
 
 window.onbeforeunload = function () {
