@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FK DarMar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header>
+
+        <div class="header-grid-container shop-container">
+            <div class="header-item">
+                
+            </div>
+            
+            <div class="header-item2 shoppingCartIcon">
+                <button class="shoppingCartLink" onclick="window.location.href='shoppingCart.html'">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class='cartCount' id='cartCount'> 0 </span>
+                </button>
+            </div>
+            <div class="header-item2 shop-language-select">
+                <div class="container">
+                    <select class="selectpicker" data-width="fit">
+                      <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                      <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+                    </select>
+                </div>
+            </div>
+            <div class="header-item2 fourth-child-second-row">
+                <button class="shop-sign-in-button">
+                    <a href="login.html">
+                        <i class="fa fa-user"></i>
+                    <h6>SIGN IN</h6>
+                    </a>
+                </button>
+            </div>
+        </div>
+
+        
+
+        <div class="shop-grid-container2">
+            <div class="header-item2 header-item2-logo">
+                <img src="./images/fcdarmarlogobezpozadina.jpg" alt="FK LOGO">
+            </div>
+            <div class="shop-item2">
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li class="navbar-item first-navbar-item">
+                            <a class="navbar-link" href="./index.html">HOME</a>
+                        </li>
+                        <li class="navbar-item first-navbar-item">
+                            <a class="navbar-link" href="#">MATCH KITS</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#">FASHION</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#">KIDS</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#">ACCESSORIES</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#">GIFT IDEAS</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="#">SALE</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+
+        <div class="products-container">
+
+            <div class="productsShoppingCart">
+                <div class="product-header">
+                    <div class="remove"></div>
+                    <h5 class="product-title">PRODUCT</h5>
+                    <h5 class="price-title">PRICE</h5>
+                    <h5 class="quantity-title">QUANTITY</h5>
+                    <h5 class="total-title">TOTAL</h5>
+                </div>
+    
+                <div class="products">
+    
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section class="shop" style="padding-bottom: 300px;">
+
+        <h2>SHOP</h2>
+
+        <div class="allKits">
+            <div class="kits">
+                <div class="kitContainer">
+                    <img src="./images/redTshirt.jpg" alt="redTshirt">
+                    <button class="discoverApp"><i class="fa fa-shopping-cart" style="padding-right: 10px;"></i>ADD TO CART</button>
+                </div>
+            </div>
+    
+            <div class="kits">
+                <div class="kitContainer">
+                    <img src="./images/blackTshirt.jpg" alt="blackTshirt">
+                    <button class="discoverApp"><i class="fa fa-shopping-cart" style="padding-right: 10px;"></i>ADD TO CART</button>
+                </div>
+            </div>
+    
+            <div class="kits">
+                <div class="kitContainer">
+                    <img src="./images/whiteTshirt.jpg" alt="whiteTshirt">
+                    <button class="discoverApp"><i class="fa fa-shopping-cart" style="padding-right: 10px;"></i>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <section>
+
+        <div class="shoppingCart">
+
+            <div class="shoppingCartContainer">
+                <div class="cartFirstRow">
+                    <h6 class="cartTitle">Shopping Cart</h6>
+                    <i class="fa fa-times"></i>
+                </div>
+                <div class="itemsContainer">
+                    <div class="shoppingCartItemContainer">
+                        <div class="shoppingCartItemImage">
+                            <img src="./images/home-kit.jpg" alt="cartItem">
+                        </div>
+                        <div class="shoppingCartItemDetails">
+                            <div class="shoppingCartItemName">
+                                <h6>HOME KIT 2021</h6>
+                            </div>
+                            <div class="shoppingCartItemSize">
+                                <h6>Size : <strong>M</strong></h6>
+                            </div>
+                            <div class="shoppingCartItemQuantity">
+                                <h6>Quantity : </h6>
+                                <input type="number" id="quantityNumber" class="quantityNumber" value="1">
+                            </div>
+                            <button class="removeItemButton">
+                                <i class="fa fa-trash"></i>REMOVE FROM CART
+                            </button>
+                        </div>
+                        <div class="shoppingCartItemPrice">
+                            <h6 class="priceItem">1000 MKD</h6>
+                        </div>
+                    </div>
+                    <div class="shoppingCartItemContainer">
+                        <div class="shoppingCartItemImage">
+                            <img src="./images/home-kit.jpg" alt="cartItem">
+                        </div>
+                        <div class="shoppingCartItemDetails">
+                            <div class="shoppingCartItemName">
+                                <h6>HOME KIT 2021</h6>
+                            </div>
+                            <div class="shoppingCartItemSize">
+                                <h6>Size : <strong>M</strong></h6>
+                            </div>
+                            <div class="shoppingCartItemQuantity">
+                                <h6>Quantity : </h6>
+                                <input type="number" id="quantityNumber" class="quantityNumber" value="1">
+                            </div>
+                            <button class="removeItemButton">
+                                <i class="fa fa-trash"></i>REMOVE FROM CART
+                            </button>
+                        </div>
+                        <div class="shoppingCartItemPrice">
+                            <h6 class="priceItem">1000 MKD</h6>
+                        </div>
+                    </div>
+                    <div class="shoppingCartItemContainer">
+                        <div class="shoppingCartItemImage">
+                            <img src="./images/home-kit.jpg" alt="cartItem">
+                        </div>
+                        <div class="shoppingCartItemDetails">
+                            <div class="shoppingCartItemName">
+                                <h6>HOME KIT 2021</h6>
+                            </div>
+                            <div class="shoppingCartItemSize">
+                                <h6>Size : <strong>M</strong></h6>
+                            </div>
+                            <div class="shoppingCartItemQuantity">
+                                <h6>Quantity : </h6>
+                                <input type="number" id="quantityNumber" class="quantityNumber" value="1">
+                            </div>
+                            <button class="removeItemButton">
+                                <i class="fa fa-trash"></i>REMOVE FROM CART
+                            </button>
+                        </div>
+                        <div class="shoppingCartItemPrice">
+                            <h6 class="priceItem">1000 MKD</h6>
+                        </div>
+                    </div>
+                    <div class="shoppingCartItemContainer">
+                        <div class="shoppingCartItemImage">
+                            <img src="./images/home-kit.jpg" alt="cartItem">
+                        </div>
+                        <div class="shoppingCartItemDetails">
+                            <div class="shoppingCartItemName">
+                                <h6>HOME KIT 2021</h6>
+                            </div>
+                            <div class="shoppingCartItemSize">
+                                <h6>Size : <strong>M</strong></h6>
+                            </div>
+                            <div class="shoppingCartItemQuantity">
+                                <h6>Quantity : </h6>
+                                <input type="number" id="quantityNumber" class="quantityNumber" value="1">
+                            </div>
+                            <button class="removeItemButton">
+                                <i class="fa fa-trash"></i>REMOVE FROM CART
+                            </button>
+                        </div>
+                        <div class="shoppingCartItemPrice">
+                            <h6 class="priceItem">1000 MKD</h6>
+                        </div>
+                    </div>
+                    <div class="shoppingCartItemContainer">
+                        <div class="shoppingCartItemImage">
+                            <img src="./images/home-kit.jpg" alt="cartItem">
+                        </div>
+                        <div class="shoppingCartItemDetails">
+                            <div class="shoppingCartItemName">
+                                <h6>HOME KIT 2021</h6>
+                            </div>
+                            <div class="shoppingCartItemSize">
+                                <h6>Size : <strong>M</strong></h6>
+                            </div>
+                            <div class="shoppingCartItemQuantity">
+                                <h6>Quantity : </h6>
+                                <input type="number" id="quantityNumber" class="quantityNumber" value="1">
+                            </div>
+                            <button class="removeItemButton">
+                                <i class="fa fa-trash"></i>REMOVE FROM CART
+                            </button>
+                        </div>
+                        <div class="shoppingCartItemPrice">
+                            <h6 class="priceItem">1000 MKD</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="subtotalAndItemCount">
+                    <div class="itemCount">
+                        <h6><strong>1</strong> Item in Cart</h6>
+                    </div>
+                    <div class="subtotal">
+                        <h6>Cart Subtotal :</h6>
+                        <h5>1000 MKD</h5>
+                    </div>
+                </div>
+                <div class="buttonsShoppingCart">
+                    <button class="viewCart">
+                        VIEW CART
+                    </button>
+                    <button class="deleteAllItems">
+                        DELETE ALL
+                    </button>
+                    <button class="checkout">
+                        CHECKOUT
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section> -->
+
+    <footer class="footer">
+
+        <img class="footerImageLogo" src="./images/fcdarmarlogobezpozadina-removebg-preview.png" alt="logo">
+
+        <div class="footerSocial">
+            <h6>FC DARMAR ON SOCIAL MEDIA</h6>
+            <div class="footerSocial1">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="footerSocial2">
+                <a href="#"><i class="fa fa-twitch"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
+
+<script>
+
+// jQuery(function($) {
+//   var quantityNUMBER = ($('#alice').val());
+//   console.log(quantityNUMBER)
+
+//   $('#alice').on('input', function() {
+//     $('#mirror').text($('#alice').val());
+//   });
+// });
+
+//     var removeCartItemButtons = document.getElementsByClassName('removeItemButton')
+//     console.log(removeCartItemButtons)
+//     for(var i = 0; i < removeCartItemButtons.length; i++) {
+//         var button = removeCartItemButtons[i]
+//         button.addEventListener('click', function(event) {
+//             var buttonClicked = event.target
+//             buttonClicked.parentElement.parentElement.remove()
+//             updateCartTotal()
+//         })
+//     }
+
+
+
+// function updateCartTotal() {
+//     var cartItemContainer = document.getElementsByClassName('itemsContainer')[0]
+//     var cartRows = cartItemContainer.getElementsByClassName('shoppingCartItemContainer')
+//     for(var i = 0; i < cartRows.length; i++) {
+//         var cartRow = cartRows[i]
+//         var priceElement = cartRow.getElementsByClassName('priceItem')[0]
+//         var quantityElement = cartRow.getElementsByClassName('quantityNumber')[0]
+//         var price = parseFloat(priceElement.innerText.replace('MKD', ''))
+//         var quantity = quantityElement.value
+//         cartRow.getElementsByClassName('quantityNumber')[0].addEventListener('change', quantityChanged)
+//         console.log(quantity)
+//     }
+
+// }
+
+let carts = document.querySelectorAll('.discoverApp');
+
+let products = [
+    {
+        name: 'Red T-shirt',
+        tag: 'redTshirt',
+        price: 1000,
+        inCart: 0
+    },
+    {
+        name: 'Black T-shirt',
+        tag: 'blackTshirt',
+        price: 1000,
+        inCart: 0
+    },
+    {
+        name: 'White T-shirt',
+        tag: 'whiteTshirt',
+        price: 1000,
+        inCart: 0
+    },
+
+]
+
+for (let i = 0; i < carts.length; i++) {
+    carts[i].addEventListener('click', () => {
+        cartNumbers(products[i]);
+        totalCost(products[i])
+    })
+}
+
+function onLoadCartCount() {
+    let productNumbers = localStorage.getItem('cartNumbers');
+
+    if(productNumbers) {
+        document.querySelector('.cartCount').textContent = productNumbers;
+    }
+}
+
+function cartNumbers(product) {
+    let productNumbers = localStorage.getItem('cartNumbers');
+    
+
+    productNumbers = parseInt(productNumbers);
+
+    if(productNumbers) {
+        localStorage.setItem('cartNumbers', productNumbers + 1);
+        document.querySelector('.cartCount').textContent = productNumbers + 1;
+    }
+    else {
+        localStorage.setItem('cartNumbers', 1);
+        document.querySelector('.cartCount').textContent = 1;
+    }
+
+
+    setItems(product);
+
+    
+}
+
+// function decreaseQuantity(product) {
+//     let productNumbers = localStorage.getItem('cartNumbers');
+
+//     if(productNumbers >= 1) {
+//         localStorage.setItem('cartNumbers', productNumbers - 1);
+//         document.querySelector('.cartCount').textContent = productNumbers - 1;
+//     }
+//     else {
+//         localStorage.setItem('cartNumbers', 0);
+//         document.querySelector('.cartCount').textContent = 0;
+//     }
+
+
+// }
+
+function setItems(product) {
+
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+
+    if(cartItems != null) {
+        if(cartItems[product.tag] == undefined) {
+            cartItems = {
+                ...cartItems,
+                [product.tag]: product
+            }
+        }
+
+        cartItems[product.tag].inCart += 1;
+    }
+
+    else {
+        product.inCart = 1;
+        cartItems = {
+        [product.tag]: product
+    }
+    }
+
+    localStorage.setItem('productsInCart', JSON.stringify(cartItems));
+}
+
+function totalCost(product) {
+    let cartCost = localStorage.getItem('totalCost');
+    
+
+    if(cartCost !=null) {
+        cartCost = parseInt(cartCost);
+        localStorage.setItem('totalCost', cartCost + product.price);
+    }
+    else {
+        localStorage.setItem('totalCost', product.price);
+    }
+    
+
+}
+
+function displayCart() {
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+    let productContainer = document.querySelector('.products');
+
+    if(cartItems && productContainer ) {
+
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item => {
+            productContainer.innerHTML += `
+            <div class="product">
+                <i class="fa fa-times"></i>
+                <div class="itemImageAndTitle">
+                    <img src="./images/${item.tag}.jpg">
+                    <span>${item.name}</span>
+                </div>
+                <div class="price">${item.price} MKD</div>
+                <div class="quantity">
+                    <i class="fa fa-minus decreaseQuantity" onclick="decreaseQuantity()"></i>
+                    <span>${item.inCart}</span>
+                    <i class="fa fa-plus increaseQuantity"></i>
+                </div>
+                <div class="total">
+                    ${item.inCart * item.price} MKD
+                </div>
+            </div>
+            
+            `;
+        });
+
+        productContainer.innerHTML += `
+            <div class="cartTotal">
+                <h4 class="cartTotalTitle">
+                    Cart Total
+                </h4>
+                <h4 class="cartTotalPrice">
+                    ${localStorage.getItem('totalCost')} MKD
+                </h4>
+            </div>
+        `;
+
+    }
+}
+
+
+showCart = () => {
+    console.log('clicked');
+}
+
+var showShoppingCart = () => {
+    document.getElementsByClassName('shoppingCartLink').addEventListener('click', showCart());
+}
+
+var cartIcon = document.getElementsByClassName('shoppingCartLink');
+var shoppingCart = document.getElementsByClassName('products-container');
+
+// $(cartIcon).click(function(){
+//   $(shoppingCart).toggleClass("show");
+// });
+
+
+
+onLoadCartCount();
+displayCart();
+ 
+</script>
+</body>
+</html>

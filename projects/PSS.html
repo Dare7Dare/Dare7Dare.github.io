@@ -46,41 +46,77 @@
     <header class="header_area">
         <div class="main-menu">
             <nav class="navbar navbar-expand-md p-3 mb-2 navbar-custom-color">   
-                <a class="navbar-brand" href="../index.html">
-                    <h2 style="color: red;">My personal web portfolio</h2>
-                </a>
-              
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+                    <h2 class="navbar-brand">Darko Kolevski - Web Portfolio</h2>
               
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto text-center w-100 justify-content-end ml-lg-0 d-lg-flex align-items-center">
-                      <div class="nav-item h-100"><a class="nav-link active" href="../index.html">Home</a></div>
-                      <div class="nav-item h-100"><a class="nav-link"href="../index.html#about-area">About</a></div>
-                      <div class="nav-item h-100"><a class="nav-link"href="../index.html#skills-area">Skills</a></div>
-                      <div class="nav-item h-100"><a class="nav-link"href="../index.html#workExperience">Experience</a></div>
-                      <div class="nav-item h-100"><a class="nav-link" href="../index.html#project-area">Projects</a></div>
-                      <div class="nav-item h-100"><a class="nav-link" href="../index.html#footer">Contact</a></div>
-                    </ul>
-                  </div>
-  
-                  <div class="mobile-bar" onclick="showHamburgerMenuLinks()">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                  </div>
-  
-                  <div id="hamburgerLinks">
-                      <a class="nav-link active" href="../index.html">Home</a>
-                      <a class="nav-link"href="../index.html#about-area">About</a>
-                      <a class="nav-link"href="../index.html#skills-area">Skills</a>
-                      <a class="nav-link"href="../index.html#workExperience">Experience</a>
-                      <a class="nav-link" href="../index.html#project-area">Projects</a>
-                      <a class="nav-link" href="../index.html#footer">Contact</a>
-                    </div>
-                </nav>
-          </div>
+                  <ul class="navbar-nav ml-auto text-center w-100 justify-content-end ml-lg-0 d-lg-flex align-items-center">
+                    <div class="nav-item h-100"><a class="nav-link active" href="#">Home</a></div>
+                    <div class="nav-item h-100"><a class="nav-link"href="#about-area">About</a></div>
+                    <div class="nav-item h-100"><a class="nav-link"href="#skills-area">Skills</a></div>
+                    <div class="nav-item h-100"><a class="nav-link"href="#workExperience">Experience</a></div>
+                    <div class="nav-item h-100"><a class="nav-link" href="#project-area">Projects</a></div>
+                    <div class="nav-item h-100"><a class="nav-link" href="#footer">Contact</a></div>
+                  </ul>
+                </div>
+
+                <!-- <div class="mobile-bar" onclick="showHamburgerMenuLinks()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div id="hamburgerLinks">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link"href="#about-area">About</a>
+                    <a class="nav-link"href="#skills-area">Skills</a>
+                    <a class="nav-link"href="#workExperience">Experience</a>
+                    <a class="nav-link" href="#project-area">Projects</a>
+                    <a class="nav-link" href="#footer">Contact</a>
+                  </div> -->
+
+                  <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-menu menu-icon"></i>
+            </div>
+            <div>
+                <a href="#" class="nav__logo"></a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about-area" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills-area" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#workExperience" class="nav__link">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#project-area" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item">
+                        <div class="socials" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <h5 style="padding-top: 3rem; color: white;">SOCIAL MEDIA</h5>
+                            <div class="" style="display: flex; justify-content: center; align-items: center; gap: 33px;">
+                                <a href="https://www.linkedin.com/in/darko-kolevski-679a381aa/" target="_blank" style="color: white; text-decoration:none; font-size: 20px;"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/dare7official/?hl=en" target="_blank" style="color: white; text-decoration:none; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+              </nav>
+        </div>
     </header>
 
     <section style="padding: 30px 50px 0 50px;">

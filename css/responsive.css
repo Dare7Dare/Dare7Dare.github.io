@@ -114,6 +114,22 @@
                         text-decoration: none;
                         }
 
+                        .img .projectButton6 {
+                          position: absolute;
+                          bottom: 20px;
+                          right: 120px;
+                          border: none;
+                          background: black;
+                          color: red;
+                          font-size: 14px;
+                          padding: 5px 20px 5px 20px;
+                          border-radius: 10px;
+                          margin: 0 auto;
+                          display:inline-block;
+                          justify-content: center;
+                          text-decoration: none;
+                          }
+
     .site-main .project-area .grid .our-project > .title h4 {
         font: normal 700 18px/12px var(--roboto);
     }
@@ -462,6 +478,22 @@
                         justify-content: center;
                         text-decoration: none;
                         }
+
+                        .img .projectButton6 {
+                          position: absolute;
+                          bottom: 20px;
+                          right: 500px;
+                          border: none;
+                          background: black;
+                          color: red;
+                          font-size: 14px;
+                          padding: 5px 20px 5px 20px;
+                          border-radius: 10px;
+                          margin: 0 auto;
+                          display:inline-block;
+                          justify-content: center;
+                          text-decoration: none;
+                          }
 
 .detailsWelcome {
     width: 280px;
@@ -1400,6 +1432,22 @@
                         text-decoration: none;
                         }
 
+                        .img .projectButton6 {
+                          position: absolute;
+                          bottom: 20px;
+                          right: 500px;
+                          border: none;
+                          background: black;
+                          color: red;
+                          font-size: 14px;
+                          padding: 5px 20px 5px 20px;
+                          border-radius: 10px;
+                          margin: 0 auto;
+                          display:inline-block;
+                          justify-content: center;
+                          text-decoration: none;
+                          }
+
     .workExperienceImage {
         padding-left: 10px !important;
     }
@@ -1504,6 +1552,22 @@
                         justify-content: center;
                         text-decoration: none;
                         }
+
+                        .img .projectButton6 {
+                          position: absolute;
+                          bottom: 20px;
+                          right: 400px;
+                          border: none;
+                          background: black;
+                          color: red;
+                          font-size: 14px;
+                          padding: 5px 20px 5px 20px;
+                          border-radius: 10px;
+                          margin: 0 auto;
+                          display:inline-block;
+                          justify-content: center;
+                          text-decoration: none;
+                          }
 }
 
 @media only screen and (max-width:630px) {
@@ -1616,6 +1680,23 @@
                         justify-content: center;
                         text-decoration: none;
                         }
+
+                        .img .projectButton6 {
+                          position: absolute;
+                          bottom: 20px;
+                          right: 300px;
+                          border: none;
+                          background: black;
+                          color: red;
+                          font-size: 14px;
+                          padding: 5px 20px 5px 20px;
+                          border-radius: 10px;
+                          margin: 0 auto;
+                          display:inline-block;
+                          justify-content: center;
+                          text-decoration: none;
+                          }
+                      
 }
 
 @media only screen and (max-width:560px) {
@@ -1849,6 +1930,22 @@
                     justify-content: center;
                     text-decoration: none;
                     }
+
+                    .img .projectButton6 {
+                      position: absolute;
+                      bottom: 20px;
+                      right: 120px;
+                      border: none;
+                      background: black;
+                      color: red;
+                      font-size: 14px;
+                      padding: 5px 20px 5px 20px;
+                      border-radius: 10px;
+                      margin: 0 auto;
+                      display:inline-block;
+                      justify-content: center;
+                      text-decoration: none;
+                      }
 
                 .site-main .project-area .button-group {
                     margin-top: -30px;
@@ -2789,6 +2886,22 @@
                     justify-content: center;
                     text-decoration: none;
                     }
+
+                    .img .projectButton6 {
+                      position: absolute;
+                      bottom: 20px;
+                      right: 80px;
+                      border: none;
+                      background: black;
+                      color: red;
+                      font-size: 12px;
+                      padding: 5px 20px 5px 20px;
+                      border-radius: 10px;
+                      margin: 0 auto;
+                      display:inline-block;
+                      justify-content: center;
+                      text-decoration: none;
+                      }
 }
 
 @media only screen and (max-width:305px) {
@@ -2898,6 +3011,22 @@
                         justify-content: center;
                         text-decoration: none;
                         }
+
+                        .img .projectButton6 {
+                          position: absolute;
+                          bottom: 20px;
+                          right: 180px;
+                          border: none;
+                          background: black;
+                          color: red;
+                          font-size: 14px;
+                          padding: 5px 20px 5px 20px;
+                          border-radius: 10px;
+                          margin: 0 auto;
+                          display:inline-block;
+                          justify-content: center;
+                          text-decoration: none;
+                          }
 }
 
 @media only screen and (max-width: 360px) {
@@ -2980,6 +3109,22 @@
                         justify-content: center;
                         text-decoration: none;
                         }
+
+                        .img .projectButton6 {
+                          position: absolute;
+                          bottom: 20px;
+                          right: 80px;
+                          border: none;
+                          background: black;
+                          color: red;
+                          font-size: 14px;
+                          padding: 5px 20px 5px 20px;
+                          border-radius: 10px;
+                          margin: 0 auto;
+                          display:inline-block;
+                          justify-content: center;
+                          text-decoration: none;
+                          }
 }
 
 @media only screen and (max-width:300px) {
@@ -3073,6 +3218,22 @@
                         justify-content: center;
                         text-decoration: none;
                         }
+
+                        .img .projectButton6 {
+                          position: absolute;
+                          bottom: 20px;
+                          right: 80px;
+                          border: none;
+                          background: black;
+                          color: red;
+                          font-size: 14px;
+                          padding: 5px 20px 5px 20px;
+                          border-radius: 10px;
+                          margin: 0 auto;
+                          display:inline-block;
+                          justify-content: center;
+                          text-decoration: none;
+                          }
 }
 
 @media only screen and (max-width: 260px) {
@@ -3155,6 +3316,22 @@
                         justify-content: center;
                         text-decoration: none;
                         }
+
+                        .img .projectButton6 {
+                          position: absolute;
+                          bottom: 20px;
+                          right: 50px;
+                          border: none;
+                          background: black;
+                          color: red;
+                          font-size: 14px;
+                          padding: 5px 20px 5px 20px;
+                          border-radius: 10px;
+                          margin: 0 auto;
+                          display:inline-block;
+                          justify-content: center;
+                          text-decoration: none;
+                          }
 }
 
 

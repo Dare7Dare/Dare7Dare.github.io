@@ -1061,3 +1061,22 @@ footer.footer-area .social a:hover > i {
 .readmore a.more {
     display:block;
 }
+
+.img .projectButton6 {
+  position: absolute;
+  bottom: 30px;
+  right: 100px;
+  border: none;
+  background: black;
+  color: red;
+  padding: 7px 40px 10px 40px;
+  border-radius: 10px;
+  margin: 0 auto;
+  display:inline-block;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.img .projectButton6:hover {
+  color: white;
+}
